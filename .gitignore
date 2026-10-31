@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+
+# Xcode: per-user state and build output
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.xcarchive
+*.dSYM/
+*.dSYM.zip
+*.profraw
+*.profdata
+*.xcresult
+
+# Never commit credentials or local configuration
+.env
+.env.*
+*.p12
+*.mobileprovision
+*.provisionprofile
+*.cer
+*.key
+*.pem
+AuthKey_*.p8
+
+# Local libraries and media
+*.store
+*.store-shm
+*.store-wal
+/image.png

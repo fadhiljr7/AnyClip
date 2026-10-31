@@ -1,0 +1,5806 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@ (%@) failed: %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (%@) gagal: %@"
+          }
+        }
+      }
+    },
+    "%@ (Recommended)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (Disarankan)"
+          }
+        }
+      }
+    },
+    "%@ / %@" : {},
+    "%@ API Key" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci API %@"
+          }
+        }
+      }
+    },
+    "%@ The video was transcribed with Apple speech recognition instead." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Video ditranskripsi dengan pengenalan suara Apple sebagai gantinya."
+          }
+        }
+      }
+    },
+    "%@ didn’t match its published checksum, so it wasn’t installed. Try again later." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ tidak cocok dengan checksum yang dipublikasikan, jadi tidak diinstal. Coba lagi nanti."
+          }
+        }
+      }
+    },
+    "%@ didn’t respond: %@ Apple Intelligence was used instead." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ tidak merespons: %@ Apple Intelligence dipakai sebagai gantinya."
+          }
+        }
+      }
+    },
+    "%@ failed — switching to Apple Intelligence…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ gagal — beralih ke Apple Intelligence…"
+          }
+        }
+      }
+    },
+    "%@ has no API key, so Apple Intelligence was used instead." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ belum punya kunci API, jadi Apple Intelligence dipakai sebagai gantinya."
+          }
+        }
+      }
+    },
+    "%@ has reached its usage limit — too many requests in a short time, or today’s quota is used up. Switch to another model or AI provider in Settings › AI, or wait a few minutes and try again." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ sudah mencapai batas pemakaian — terlalu banyak permintaan dalam waktu singkat, atau kuota hari ini sudah habis. Ganti ke model atau penyedia AI lain di Pengaturan › AI, atau tunggu beberapa menit lalu coba lagi."
+          }
+        }
+      }
+    },
+    "%@ has reached its usage limit, so Apple Intelligence was used instead. To keep using %@, switch to another model in Settings › AI or wait a few minutes." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ sudah mencapai batas pemakaian, jadi Apple Intelligence dipakai sebagai gantinya. Untuk tetap memakai %@, ganti ke model lain di Pengaturan › AI atau tunggu beberapa menit."
+          }
+        }
+      }
+    },
+    "%@ is overloaded for this model right now. Try again in a few minutes." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ sedang sibuk untuk model ini. Coba lagi beberapa menit lagi."
+          }
+        }
+      }
+    },
+    "%@ rejected the API key. Check it in Settings › AI." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ menolak kunci API. Periksa di Pengaturan › AI."
+          }
+        }
+      }
+    },
+    "%@ stopped (%d). %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ berhenti (%d). %@"
+          }
+        }
+      }
+    },
+    "%@ to %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ sampai %@"
+          }
+        }
+      }
+    },
+    "%@ to %@, teaser from %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ sampai %2$@, teaser dari %3$@"
+          }
+        }
+      }
+    },
+    "%@ · %@" : {},
+    "%@ · %@ (Recommended)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · %@ (Disarankan)"
+          }
+        }
+      }
+    },
+    "%@ – %@ · %@" : {},
+    "%@ — added by the creator" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — dibuat oleh kreator"
+          }
+        }
+      }
+    },
+    "%@ — generated by YouTube" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ — dibuat otomatis oleh YouTube"
+          }
+        }
+      }
+    },
+    "%@, %@, score %lld of 10" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@, skor %lld dari 10"
+          }
+        }
+      }
+    },
+    "%lld clips · %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld klip · %@"
+          }
+        }
+      }
+    },
+    "%lld moments found by %@. Open a clip to adjust its trim, captions and framing." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld momen ditemukan oleh %@. Buka klip untuk mengatur potongan, teks, dan bingkainya."
+          }
+        }
+      }
+    },
+    "%lld%% downloaded" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%% terunduh"
+          }
+        }
+      }
+    },
+    "%lld%% transcribed" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%% ditranskripsi"
+          }
+        }
+      }
+    },
+    "1 clip · %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 klip · %@"
+          }
+        }
+      }
+    },
+    "1 moment found by %@. Open the clip to adjust its trim, captions and framing." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 momen ditemukan oleh %@. Buka klip untuk menyesuaikan pangkasan, teks, dan pembingkaian."
+          }
+        }
+      }
+    },
+    "1080p" : {},
+    "1440p" : {},
+    "15–30 s" : {},
+    "30–60 s" : {},
+    "4K" : {},
+    "60–90 s" : {},
+    "720p" : {},
+    "@yourhandle" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "@akunmu"
+          }
+        }
+      }
+    },
+    "A direct claim with strong words or numbers." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pernyataan langsung dengan kata-kata kuat atau angka."
+          }
+        }
+      }
+    },
+    "A line that makes people stay" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalimat yang membuat orang bertahan"
+          }
+        }
+      }
+    },
+    "A short teaser for the post" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teaser singkat untuk postingan"
+          }
+        }
+      }
+    },
+    "A short walk-through of the main window and how to make clips." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Panduan singkat tentang jendela utama dan cara membuat klip."
+          }
+        }
+      }
+    },
+    "AI" : {},
+    "AI Settings…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengaturan AI…"
+          }
+        }
+      }
+    },
+    "API key" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci API"
+          }
+        }
+      }
+    },
+    "Accent" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aksen"
+          }
+        }
+      }
+    },
+    "Add Card at Playhead" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah Kartu di Playhead"
+          }
+        }
+      }
+    },
+    "Add Keyframe" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah Keyframe"
+          }
+        }
+      }
+    },
+    "Add a video" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan video"
+          }
+        }
+      }
+    },
+    "Add a watermark to exported clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan watermark ke klip yang diekspor"
+          }
+        }
+      }
+    },
+    "Add to Saved" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan"
+          }
+        }
+      }
+    },
+    "Add to Saved (⌘D)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan (⌘D)"
+          }
+        }
+      }
+    },
+    "Adds 1–3 animated keyword cards to each clip. You can edit or remove them in the editor." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menambahkan 1–3 kartu kata kunci beranimasi ke setiap klip. Anda bisa mengedit atau menghapusnya di editor."
+          }
+        }
+      }
+    },
+    "Adjust Framing" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atur Bingkai"
+          }
+        }
+      }
+    },
+    "Adjust Framing…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atur Bingkai…"
+          }
+        }
+      }
+    },
+    "All Clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua Klip"
+          }
+        }
+      }
+    },
+    "All caps" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huruf kapital"
+          }
+        }
+      }
+    },
+    "All your clips in one place" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua klip Anda di satu tempat"
+          }
+        }
+      }
+    },
+    "An estimate of how well the opening hooks, how complete the story is and how shareable it is. Treat it as a hint, not a promise." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkiraan seberapa kuat pembukanya, seberapa utuh ceritanya, dan seberapa mudah dibagikan. Anggap sebagai petunjuk, bukan jaminan."
+          }
+        }
+      }
+    },
+    "Animated keyword cards cut into the clip. Turn this off to leave them out of the preview and export." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kartu kata kunci beranimasi yang disisipkan ke klip. Matikan agar tidak muncul di pratinjau dan hasil ekspor."
+          }
+        }
+      }
+    },
+    "Animation" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animasi"
+          }
+        }
+      }
+    },
+    "Any OpenAI-compatible API, such as a gateway that serves many models. Uses your own base URL and key." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API apa pun yang kompatibel dengan OpenAI, misalnya gateway yang menyediakan banyak model. Memakai URL dasar dan kunci milik Anda."
+          }
+        }
+      }
+    },
+    "AnyClip" : {},
+    "AnyClip Can’t Open Your Library" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AnyClip Tidak Dapat Membuka Pustaka Anda"
+          }
+        }
+      }
+    },
+    "AnyClip Tour" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tur AnyClip"
+          }
+        }
+      }
+    },
+    "AnyClip couldn’t see two speakers clearly enough in this clip — faces may be too small, turned away or covered by graphics — so it uses the full-frame layout." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AnyClip tidak bisa melihat dua pembicara dengan cukup jelas di klip ini — wajah mungkin terlalu kecil, berpaling, atau tertutup grafis — jadi klip ini memakai tata letak satu layar penuh."
+          }
+        }
+      }
+    },
+    "AnyClip downloads, transcribes, finds the best moments and frames them for you. It works in the background, so you can keep going." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AnyClip mengunduh, mentranskripsi, menemukan momen terbaik, dan membingkainya untuk Anda. Semuanya berjalan di latar belakang, jadi Anda bisa tetap bekerja."
+          }
+        }
+      }
+    },
+    "AnyClip follows the main speaker automatically. Adjust Framing lets you place the crop yourself at any moment." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AnyClip mengikuti pembicara utama secara otomatis. Dengan Atur Bingkai, Anda bisa menempatkan potongan sendiri kapan saja."
+          }
+        }
+      }
+    },
+    "AnyClip has no copy of this video. Create a new project from the original file." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AnyClip tidak memiliki salinan video ini. Buat proyek baru dari file aslinya."
+          }
+        }
+      }
+    },
+    "AnyClip quit before this project finished." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AnyClip tertutup sebelum proyek ini selesai."
+          }
+        }
+      }
+    },
+    "Appearance" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilan"
+          }
+        }
+      }
+    },
+    "Apple Intelligence" : {},
+    "Apple Intelligence (Private Cloud Compute)" : {},
+    "Apple Intelligence (on this Mac)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence (di Mac ini)"
+          }
+        }
+      }
+    },
+    "Apple Intelligence couldn’t read this clip (%@), so moments were picked from strong words in the transcript." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence tidak bisa membaca klip ini (%@), jadi momen dipilih dari kata-kata kuat di transkrip."
+          }
+        }
+      }
+    },
+    "Apple Intelligence declined to write hooks for this clip. Try again, or choose another AI provider in Settings › AI." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence menolak menulis hook untuk klip ini. Coba lagi, atau pilih penyedia AI lain di Pengaturan › AI."
+          }
+        }
+      }
+    },
+    "Apple Intelligence finds the best moments privately on this Mac. Prefer Gemini, OpenAI or another service? Add your own key in Settings › AI." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence menemukan momen terbaik secara privat di Mac ini. Lebih suka Gemini, OpenAI, atau layanan lain? Tambahkan kunci Anda sendiri di Pengaturan › AI."
+          }
+        }
+      }
+    },
+    "Apple Intelligence is reading… (%lld/%lld)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence sedang membaca… (%lld/%lld)"
+          }
+        }
+      }
+    },
+    "Apple Intelligence isn’t available, so titles come from the speaker’s own words." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence tidak tersedia, jadi judul diambil dari ucapan pembicara sendiri."
+          }
+        }
+      }
+    },
+    "Apple Speech Recognition" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengenalan Suara Apple"
+          }
+        }
+      }
+    },
+    "Apple speech recognition couldn’t transcribe this video (%@), so the YouTube transcript was used." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengenalan suara Apple tidak bisa mentranskripsi video ini (%@), jadi transkrip YouTube yang dipakai."
+          }
+        }
+      }
+    },
+    "Arc" : {},
+    "Asking %@ (%@)… (%lld/%lld)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bertanya ke %@ (%@)… (%lld/%lld)"
+          }
+        }
+      }
+    },
+    "Asks the AI for new teaser moments from this clip. Your chosen teaser stays until you pick another." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meminta AI mencari momen teaser baru dari klip ini. Teaser pilihan Anda tetap dipakai sampai Anda memilih yang lain."
+          }
+        }
+      }
+    },
+    "At %@ · %@ s" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di %1$@ · %2$@ dtk"
+          }
+        }
+      }
+    },
+    "Attach SRT or VTT…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lampirkan SRT atau VTT…"
+          }
+        }
+      }
+    },
+    "Attach a subtitle file to create clips with this option." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lampirkan file subtitle untuk membuat klip dengan opsi ini."
+          }
+        }
+      }
+    },
+    "Auto" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otomatis"
+          }
+        }
+      }
+    },
+    "Available in the 9:16 format." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tersedia dalam format 9:16."
+          }
+        }
+      }
+    },
+    "B-roll" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "B-roll"
+          }
+        }
+      }
+    },
+    "Back 5 Seconds" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mundur 5 Detik"
+          }
+        }
+      }
+    },
+    "Back 5 seconds" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mundur 5 detik"
+          }
+        }
+      }
+    },
+    "Base URL" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL Dasar"
+          }
+        }
+      }
+    },
+    "Best First" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terbaik Dulu"
+          }
+        }
+      }
+    },
+    "Best balance of accuracy and speed." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keseimbangan terbaik antara akurasi dan kecepatan."
+          }
+        }
+      }
+    },
+    "Big word on the card" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kata besar di kartu"
+          }
+        }
+      }
+    },
+    "Bold" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tebal"
+          }
+        }
+      }
+    },
+    "Both speakers appear to be on screen in %lld%% of this clip. When only one is visible, the layout switches to full frame." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kedua pembicara tampaknya terlihat di %lld%% klip ini. Saat hanya satu yang terlihat, tata letak beralih ke satu layar penuh."
+          }
+        }
+      }
+    },
+    "Both speakers appear to be on screen throughout this clip." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kedua pembicara tampaknya terlihat di sepanjang klip ini."
+          }
+        }
+      }
+    },
+    "Bottom Left" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiri Bawah"
+          }
+        }
+      }
+    },
+    "Bottom Right" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kanan Bawah"
+          }
+        }
+      }
+    },
+    "Box" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kotak"
+          }
+        }
+      }
+    },
+    "Brave" : {},
+    "Browse every clip from every project. Hot collects the highest-scoring ones, and Saved keeps the clips you bookmark with ⌘D." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jelajahi semua klip dari setiap proyek. Hot berisi klip dengan skor tertinggi, dan Tersimpan menyimpan klip yang Anda tandai dengan ⌘D."
+          }
+        }
+      }
+    },
+    "Built into macOS and ready to use. Listens to the video on this Mac — nothing is uploaded, and there’s nothing to download." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sudah ada di macOS dan siap dipakai. Mendengarkan video langsung di Mac ini — tidak ada yang diunggah dan tidak perlu mengunduh apa pun."
+          }
+        }
+      }
+    },
+    "Built-in scoring (no AI available)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penilaian bawaan (AI tidak tersedia)"
+          }
+        }
+      }
+    },
+    "Camera" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamera"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batal"
+          }
+        }
+      }
+    },
+    "Cancel Export" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batalkan Ekspor"
+          }
+        }
+      }
+    },
+    "Cancel Exports" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batalkan Ekspor"
+          }
+        }
+      }
+    },
+    "Cancel this export" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batalkan ekspor ini"
+          }
+        }
+      }
+    },
+    "Cancelled" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dibatalkan"
+          }
+        }
+      }
+    },
+    "Can’t Preview This Clip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip Ini Tidak Bisa Dipratinjau"
+          }
+        }
+      }
+    },
+    "Caption" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keterangan"
+          }
+        }
+      }
+    },
+    "Captions" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teks"
+          }
+        }
+      }
+    },
+    "Captions, hook, watermark and framing play live here. Press Space to play or pause." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teks, hook, watermark, dan pembingkaian langsung terlihat di sini. Tekan Spasi untuk memutar atau menjeda."
+          }
+        }
+      }
+    },
+    "Card" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kartu"
+          }
+        }
+      }
+    },
+    "Cards" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kartu"
+          }
+        }
+      }
+    },
+    "Category" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kategori"
+          }
+        }
+      }
+    },
+    "Center" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tengah"
+          }
+        }
+      }
+    },
+    "Center Frame" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tengahkan Bingkai"
+          }
+        }
+      }
+    },
+    "Change…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubah…"
+          }
+        }
+      }
+    },
+    "Check Models" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Periksa Model"
+          }
+        }
+      }
+    },
+    "Checking for a transcript…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memeriksa transkrip…"
+          }
+        }
+      }
+    },
+    "Choose Add to Saved on a clip to keep it here." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih Simpan pada klip agar muncul di sini."
+          }
+        }
+      }
+    },
+    "Choose New Project in the sidebar, or press ⌘N from anywhere, to start with a new video." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih Proyek Baru di bar samping, atau tekan ⌘N dari mana saja, untuk mulai dengan video baru."
+          }
+        }
+      }
+    },
+    "Choose Video…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih Video…"
+          }
+        }
+      }
+    },
+    "Choose a look" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih gaya"
+          }
+        }
+      }
+    },
+    "Choose a method for each project under New Project › Video › Transcript." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih metode untuk setiap proyek di Proyek Baru › Video › Transkrip."
+          }
+        }
+      }
+    },
+    "Choose…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih…"
+          }
+        }
+      }
+    },
+    "Chosen Teaser" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teaser Terpilih"
+          }
+        }
+      }
+    },
+    "Clean" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bersih"
+          }
+        }
+      }
+    },
+    "Clip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip"
+          }
+        }
+      }
+    },
+    "Clip %lld of %lld" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip %lld dari %lld"
+          }
+        }
+      }
+    },
+    "Clip preview" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pratinjau klip"
+          }
+        }
+      }
+    },
+    "Clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip"
+          }
+        }
+      }
+    },
+    "Clips are scored and sorted best first. Each card shows its score, length and hook. Click a clip to open it in the editor." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip diberi skor dan diurutkan dari yang terbaik. Setiap kartu menampilkan skor, durasi, dan hook-nya. Klik klip untuk membukanya di editor."
+          }
+        }
+      }
+    },
+    "Clips scoring 8 or higher show up here." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip dengan skor 8 ke atas muncul di sini."
+          }
+        }
+      }
+    },
+    "Close the tour (Esc). You can repeat it from Settings › General." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup tur (Esc). Anda bisa mengulanginya dari Pengaturan › Umum."
+          }
+        }
+      }
+    },
+    "Collage" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kolase"
+          }
+        }
+      }
+    },
+    "Color %lld" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warna %lld"
+          }
+        }
+      }
+    },
+    "Connected" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terhubung"
+          }
+        }
+      }
+    },
+    "Connection" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koneksi"
+          }
+        }
+      }
+    },
+    "Content" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Isi"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lanjutkan"
+          }
+        }
+      }
+    },
+    "Converting video…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengonversi video…"
+          }
+        }
+      }
+    },
+    "Copy Title" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salin Judul"
+          }
+        }
+      }
+    },
+    "Copy Title and Caption" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salin Judul dan Keterangan"
+          }
+        }
+      }
+    },
+    "Copying video…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menyalin video…"
+          }
+        }
+      }
+    },
+    "Corners" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sudut"
+          }
+        }
+      }
+    },
+    "Couldn’t Make Clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gagal Membuat Klip"
+          }
+        }
+      }
+    },
+    "Couldn’t check for a transcript: %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak bisa memeriksa transkrip: %@"
+          }
+        }
+      }
+    },
+    "Create Clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat Klip"
+          }
+        }
+      }
+    },
+    "Create a project from a link or a video file to get your first clips." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat proyek dari tautan atau file video untuk mendapatkan klip pertama Anda."
+          }
+        }
+      }
+    },
+    "Create vertical videos with two speakers displayed one above the other." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat video vertikal dengan dua pembicara yang ditampilkan atas-bawah."
+          }
+        }
+      }
+    },
+    "Create your clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat klip Anda"
+          }
+        }
+      }
+    },
+    "Crop frame" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bingkai potong"
+          }
+        }
+      }
+    },
+    "Curiosity" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rasa Penasaran"
+          }
+        }
+      }
+    },
+    "Custom Provider" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penyedia Kustom"
+          }
+        }
+      }
+    },
+    "Dark Mode" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode Gelap"
+          }
+        }
+      }
+    },
+    "Dark backdrop" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latar gelap"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus"
+          }
+        }
+      }
+    },
+    "Delete Card" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Kartu"
+          }
+        }
+      }
+    },
+    "Delete Clip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Klip"
+          }
+        }
+      }
+    },
+    "Delete Clip…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Klip…"
+          }
+        }
+      }
+    },
+    "Delete Keyframe" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Keyframe"
+          }
+        }
+      }
+    },
+    "Delete Project" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Proyek"
+          }
+        }
+      }
+    },
+    "Delete Project and Exported Clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Proyek dan Klip yang Diekspor"
+          }
+        }
+      }
+    },
+    "Delete Project…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Proyek…"
+          }
+        }
+      }
+    },
+    "Delete this card" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus kartu ini"
+          }
+        }
+      }
+    },
+    "Delete “%@”?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus “%@”?"
+          }
+        }
+      }
+    },
+    "Details" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detail"
+          }
+        }
+      }
+    },
+    "Detect Automatically" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deteksi Otomatis"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesai"
+          }
+        }
+      }
+    },
+    "Download" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unduh"
+          }
+        }
+      }
+    },
+    "Download Settings…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengaturan Unduhan…"
+          }
+        }
+      }
+    },
+    "Download up to" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unduh maksimal"
+          }
+        }
+      }
+    },
+    "Downloaded. Works offline." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sudah diunduh. Bisa dipakai offline."
+          }
+        }
+      }
+    },
+    "Downloading" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengunduh"
+          }
+        }
+      }
+    },
+    "Downloading the WhisperKit model (one time only)… %lld%%" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengunduh model WhisperKit (hanya sekali)… %lld%%"
+          }
+        }
+      }
+    },
+    "Downloading…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengunduh…"
+          }
+        }
+      }
+    },
+    "Downloading… %lld%%" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengunduh… %lld%%"
+          }
+        }
+      }
+    },
+    "Downloads" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unduhan"
+          }
+        }
+      }
+    },
+    "Downloads stop working? Update yt-dlp first — sites change often." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unduhan bermasalah? Perbarui yt-dlp dulu — situs sering berubah."
+          }
+        }
+      }
+    },
+    "Downloads videos from YouTube, TikTok, Instagram and 1,000+ sites." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengunduh video dari YouTube, TikTok, Instagram, dan 1.000+ situs."
+          }
+        }
+      }
+    },
+    "Drag the frame to place it. Each move adds a keyframe at the playhead." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seret bingkai untuk menempatkannya. Setiap gerakan menambah keyframe di posisi putar."
+          }
+        }
+      }
+    },
+    "Drag the handles to change where the clip starts and ends. They snap to spoken words, so sentences never get cut off." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seret pegangan untuk mengubah awal dan akhir klip. Pegangan menempel ke kata yang diucapkan, jadi kalimat tidak pernah terpotong."
+          }
+        }
+      }
+    },
+    "Drag to change where the clip ends. Hold Option to turn off snapping." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seret untuk mengubah akhir klip. Tahan Option untuk mematikan snap."
+          }
+        }
+      }
+    },
+    "Drag to change where the clip starts. Hold Option to turn off snapping." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seret untuk mengubah awal klip. Tahan Option untuk mematikan snap."
+          }
+        }
+      }
+    },
+    "Drop to use this video" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lepas untuk memakai video ini"
+          }
+        }
+      }
+    },
+    "Each line on its own marker strip, like a highlighted note." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setiap baris di atas strip penanda sendiri, seperti catatan yang distabilo."
+          }
+        }
+      }
+    },
+    "Each model is downloaded once and kept on this Mac. All of them understand Indonesian, English and 90+ other languages." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setiap model diunduh sekali dan disimpan di Mac ini. Semuanya memahami bahasa Indonesia, Inggris, dan 90+ bahasa lainnya."
+          }
+        }
+      }
+    },
+    "Each video becomes a project here, with live progress while it works. Control-click a project to try again, show it in Finder or delete it." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setiap video menjadi proyek di sini, lengkap dengan progres langsung saat diproses. Control-klik proyek untuk mencoba lagi, menampilkannya di Finder, atau menghapusnya."
+          }
+        }
+      }
+    },
+    "Edit Words" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit Kata"
+          }
+        }
+      }
+    },
+    "Edit caption text and style, rewrite the hook, adjust framing with keyframes and see why the clip was chosen. Export with ⌘E." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit isi dan gaya teks, tulis ulang hook, atur pembingkaian dengan keyframe, dan lihat alasan klip dipilih. Ekspor dengan ⌘E."
+          }
+        }
+      }
+    },
+    "Editor" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editor"
+          }
+        }
+      }
+    },
+    "Educational" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edukasi"
+          }
+        }
+      }
+    },
+    "Emotional Moment" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Momen Emosional"
+          }
+        }
+      }
+    },
+    "End" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akhir"
+          }
+        }
+      }
+    },
+    "Ends before the sentence is finished." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berakhir sebelum kalimatnya selesai."
+          }
+        }
+      }
+    },
+    "Enter a full address that starts with https://. Plain http:// only works for a server on this Mac or its local network." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masukkan alamat lengkap yang diawali https://. http:// biasa hanya berfungsi untuk server di Mac ini atau di jaringan lokalnya."
+          }
+        }
+      }
+    },
+    "Enter a full link that starts with https://" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masukkan tautan lengkap yang diawali https://"
+          }
+        }
+      }
+    },
+    "Enter the OpenAI-compatible address from your provider, usually ending in /v1." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masukkan alamat yang kompatibel dengan OpenAI dari penyedia Anda, biasanya diakhiri /v1."
+          }
+        }
+      }
+    },
+    "Enter the provider’s base URL in Settings › AI." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masukkan URL dasar penyedia di Pengaturan › AI."
+          }
+        }
+      }
+    },
+    "Every clip starts here" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setiap klip dimulai di sini"
+          }
+        }
+      }
+    },
+    "Export" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekspor"
+          }
+        }
+      }
+    },
+    "Export Again" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekspor Lagi"
+          }
+        }
+      }
+    },
+    "Export All" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekspor Semua"
+          }
+        }
+      }
+    },
+    "Export All Clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekspor Semua Klip"
+          }
+        }
+      }
+    },
+    "Export Clip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekspor Klip"
+          }
+        }
+      }
+    },
+    "Export Failed" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekspor Gagal"
+          }
+        }
+      }
+    },
+    "Export clips when finished" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekspor klip setelah selesai"
+          }
+        }
+      }
+    },
+    "Export every clip in this project (⇧⌘E)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekspor semua klip di proyek ini (⇧⌘E)"
+          }
+        }
+      }
+    },
+    "Export failed: %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekspor gagal: %@"
+          }
+        }
+      }
+    },
+    "Exported" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sudah diekspor"
+          }
+        }
+      }
+    },
+    "Exporting…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengekspor…"
+          }
+        }
+      }
+    },
+    "Fade" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pudar"
+          }
+        }
+      }
+    },
+    "Failed" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gagal"
+          }
+        }
+      }
+    },
+    "Fastest and smallest. Good for clear speech." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paling cepat dan paling kecil. Cocok untuk ucapan yang jelas."
+          }
+        }
+      }
+    },
+    "Fastest for YouTube links: uses the video’s own transcript, so there’s nothing to listen to. Check that the video has a transcript — on YouTube, open the description and look for Show Transcript." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paling cepat untuk tautan YouTube: memakai transkrip bawaan video, jadi tidak perlu mendengarkan audionya. Pastikan video punya transkrip — di YouTube, buka deskripsi dan cari Tampilkan transkrip."
+          }
+        }
+      }
+    },
+    "Find moments with" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari momen dengan"
+          }
+        }
+      }
+    },
+    "Finding moments" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mencari momen"
+          }
+        }
+      }
+    },
+    "Finding moments that make people stay…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mencari momen yang membuat orang bertahan…"
+          }
+        }
+      }
+    },
+    "Finds the speaker’s face and moves the crop with them, so they stay in the picture when a wide video is cropped to the clip format." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mencari wajah pembicara dan menggeser potongan gambar mengikutinya, sehingga wajah tetap terlihat saat video lebar dipotong ke format klip."
+          }
+        }
+      }
+    },
+    "Fine-tune any clip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sempurnakan klip mana pun"
+          }
+        }
+      }
+    },
+    "Fine-tune everything" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sempurnakan semuanya"
+          }
+        }
+      }
+    },
+    "Finish the tour (Return)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesaikan tur (Return)"
+          }
+        }
+      }
+    },
+    "Finished" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesai"
+          }
+        }
+      }
+    },
+    "Firefox" : {},
+    "Focus" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fokus"
+          }
+        }
+      }
+    },
+    "Follow Faces Again" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikuti Wajah Lagi"
+          }
+        }
+      }
+    },
+    "Font" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Font"
+          }
+        }
+      }
+    },
+    "For age-restricted or members-only videos, yt-dlp can use the sign-in from your browser. Cookies never leave this Mac. Safari requires Full Disk Access for AnyClip." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Untuk video dengan batasan usia atau khusus member, yt-dlp bisa memakai login dari browser Anda. Cookie tidak pernah keluar dari Mac ini. Safari memerlukan Akses Disk Penuh untuk AnyClip."
+          }
+        }
+      }
+    },
+    "For podcasts and interviews: shows both speakers one above the other whenever they’re on screen together." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Untuk podcast dan wawancara: menampilkan kedua pembicara atas-bawah setiap kali mereka terlihat bersamaan."
+          }
+        }
+      }
+    },
+    "Format" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format"
+          }
+        }
+      }
+    },
+    "Forward 5 Seconds" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maju 5 Detik"
+          }
+        }
+      }
+    },
+    "Forward 5 seconds" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maju 5 detik"
+          }
+        }
+      }
+    },
+    "Framing" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bingkai"
+          }
+        }
+      }
+    },
+    "Free and private. Runs on this Mac." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratis dan privat. Berjalan di Mac ini."
+          }
+        }
+      }
+    },
+    "Free tier available. Handles very long videos in one pass." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ada versi gratis. Bisa memproses video sangat panjang sekaligus."
+          }
+        }
+      }
+    },
+    "Free tier available. Very fast; long videos are split into parts." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ada versi gratis. Sangat cepat; video panjang dibagi menjadi beberapa bagian."
+          }
+        }
+      }
+    },
+    "Free to use. No account, no license key and no watermark of ours on your clips." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratis. Tanpa akun, tanpa kunci lisensi, dan tanpa watermark kami di klip Anda."
+          }
+        }
+      }
+    },
+    "From %@ in the clip · %@ s" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dari %1$@ di klip · %2$@ dtk"
+          }
+        }
+      }
+    },
+    "Full Screen" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layar Penuh"
+          }
+        }
+      }
+    },
+    "Funny" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lucu"
+          }
+        }
+      }
+    },
+    "General" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umum"
+          }
+        }
+      }
+    },
+    "Get Started" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai"
+          }
+        }
+      }
+    },
+    "Get a key" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dapatkan kunci"
+          }
+        }
+      }
+    },
+    "Getting the YouTube transcript…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengambil transkrip YouTube…"
+          }
+        }
+      }
+    },
+    "Getting the speech model ready…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menyiapkan model suara…"
+          }
+        }
+      }
+    },
+    "Glow" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berpendar"
+          }
+        }
+      }
+    },
+    "Google Chrome" : {},
+    "H.264 (most compatible)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "H.264 (paling kompatibel)"
+          }
+        }
+      }
+    },
+    "HEVC (smaller files)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HEVC (file lebih kecil)"
+          }
+        }
+      }
+    },
+    "Highlight" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorotan"
+          }
+        }
+      }
+    },
+    "Highlight Strip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strip Sorotan"
+          }
+        }
+      }
+    },
+    "Hook" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hook"
+          }
+        }
+      }
+    },
+    "Hook title at the start" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Judul hook di awal"
+          }
+        }
+      }
+    },
+    "Hot" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hot"
+          }
+        }
+      }
+    },
+    "Hot Take" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontroversial"
+          }
+        }
+      }
+    },
+    "If %@ fails, use Apple Intelligence instead" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jika %@ gagal, pakai Apple Intelligence"
+          }
+        }
+      }
+    },
+    "Impact" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impact"
+          }
+        }
+      }
+    },
+    "Import Video…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impor Video…"
+          }
+        }
+      }
+    },
+    "In Use" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dipakai"
+          }
+        }
+      }
+    },
+    "In progress" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sedang berjalan"
+          }
+        }
+      }
+    },
+    "In the stacked parts, each speaker is framed automatically. Adjust Framing changes the full-frame parts." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di bagian yang bertumpuk, setiap pembicara dibingkai otomatis. Atur Bingkai mengubah bagian yang satu layar penuh."
+          }
+        }
+      }
+    },
+    "Inspector" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inspektur"
+          }
+        }
+      }
+    },
+    "Inspirational" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inspiratif"
+          }
+        }
+      }
+    },
+    "Install" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pasang"
+          }
+        }
+      }
+    },
+    "Installing Deno…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memasang Deno…"
+          }
+        }
+      }
+    },
+    "Installing yt-dlp…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memasang yt-dlp…"
+          }
+        }
+      }
+    },
+    "It sent an empty answer (reason: %@)." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jawabannya kosong (alasan: %@)."
+          }
+        }
+      }
+    },
+    "It sent an empty answer." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jawabannya kosong."
+          }
+        }
+      }
+    },
+    "Its answer couldn’t be read as clips." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jawabannya tidak bisa dibaca sebagai klip."
+          }
+        }
+      }
+    },
+    "Its answer couldn’t be read." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jawabannya tidak bisa dibaca."
+          }
+        }
+      }
+    },
+    "JavaScript runtime that yt-dlp needs for YouTube." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Runtime JavaScript yang dibutuhkan yt-dlp untuk YouTube."
+          }
+        }
+      }
+    },
+    "Jump to this card" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lompat ke kartu ini"
+          }
+        }
+      }
+    },
+    "Jump to this line" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lompat ke baris ini"
+          }
+        }
+      }
+    },
+    "Karaoke" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karaoke"
+          }
+        }
+      }
+    },
+    "Keep Working" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lanjutkan Bekerja"
+          }
+        }
+      }
+    },
+    "Keep faces in frame" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaga wajah tetap di bingkai"
+          }
+        }
+      }
+    },
+    "Keep for the whole clip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan sepanjang klip"
+          }
+        }
+      }
+    },
+    "Keyframe at %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keyframe di %@"
+          }
+        }
+      }
+    },
+    "Keyframes" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keyframe"
+          }
+        }
+      }
+    },
+    "Keyword" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kata kunci"
+          }
+        }
+      }
+    },
+    "Label" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Label"
+          }
+        }
+      }
+    },
+    "Large outlined letters with no box, like a thumbnail title." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huruf besar bergaris tepi tanpa kotak, seperti judul thumbnail."
+          }
+        }
+      }
+    },
+    "Large v3 Turbo" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Large v3 Turbo"
+          }
+        }
+      }
+    },
+    "Large v3 Turbo (Full Precision)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Large v3 Turbo (Presisi Penuh)"
+          }
+        }
+      }
+    },
+    "Layout" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tata Letak"
+          }
+        }
+      }
+    },
+    "Left-aligned text beside a colored bar, like a news caption." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teks rata kiri di samping bilah berwarna, seperti teks berita."
+          }
+        }
+      }
+    },
+    "Length" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durasi"
+          }
+        }
+      }
+    },
+    "Length %@ s" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durasi %@ dtk"
+          }
+        }
+      }
+    },
+    "Library" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pustaka"
+          }
+        }
+      }
+    },
+    "Link" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tautan"
+          }
+        }
+      }
+    },
+    "Loading the WhisperKit model…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memuat model WhisperKit…"
+          }
+        }
+      }
+    },
+    "Logo" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logo"
+          }
+        }
+      }
+    },
+    "Long videos are read in parts by the model on this Mac. When Apple Intelligence isn’t available, AnyClip uses built-in scoring that runs entirely on this Mac." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video panjang dibaca per bagian oleh model di Mac ini. Bila Apple Intelligence tidak tersedia, AnyClip memakai penilaian bawaan yang sepenuhnya berjalan di Mac ini."
+          }
+        }
+      }
+    },
+    "Longer than a typical teaser." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lebih panjang dari teaser pada umumnya."
+          }
+        }
+      }
+    },
+    "Look" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilan"
+          }
+        }
+      }
+    },
+    "Loop preview" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulangi pratinjau"
+          }
+        }
+      }
+    },
+    "Make Clips Again" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat Klip Lagi"
+          }
+        }
+      }
+    },
+    "May give away the clip’s ending." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mungkin membocorkan akhir klip."
+          }
+        }
+      }
+    },
+    "May need the earlier context to make sense." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mungkin perlu konteks sebelumnya agar bisa dipahami."
+          }
+        }
+      }
+    },
+    "Methods" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metode"
+          }
+        }
+      }
+    },
+    "Microsoft Edge" : {},
+    "Model" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Model"
+          }
+        }
+      }
+    },
+    "Model not available for this API: %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Model tidak tersedia untuk API ini: %@"
+          }
+        }
+      }
+    },
+    "Model not found. The ID may be wrong or not released yet." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Model tidak ditemukan. ID-nya mungkin salah atau belum dirilis."
+          }
+        }
+      }
+    },
+    "Moments and titles are suggested by %@." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Momen dan judul disarankan oleh %@."
+          }
+        }
+      }
+    },
+    "Move one word earlier" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geser satu kata lebih awal"
+          }
+        }
+      }
+    },
+    "Move one word later" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geser satu kata lebih akhir"
+          }
+        }
+      }
+    },
+    "My video contains both speakers in a consistent shot, or I understand that results may vary when the camera switches between speakers." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video saya memperlihatkan kedua pembicara dalam bidikan yang konsisten, atau saya paham hasilnya bisa berbeda-beda saat kamera berpindah antarpembicara."
+          }
+        }
+      }
+    },
+    "Needs a one-time download of %@. After that it works offline." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perlu diunduh sekali (%@). Setelah itu bisa dipakai offline."
+          }
+        }
+      }
+    },
+    "Neon" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neon"
+          }
+        }
+      }
+    },
+    "New Project" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek Baru"
+          }
+        }
+      }
+    },
+    "Next" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berikutnya"
+          }
+        }
+      }
+    },
+    "Next step (Return or →)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langkah berikutnya (Return atau →)"
+          }
+        }
+      }
+    },
+    "No AI was available, so moments were picked from strong words in the transcript." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI tidak tersedia, jadi momen dipilih dari kata-kata kuat di transkrip."
+          }
+        }
+      }
+    },
+    "No Clips Yet" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum Ada Klip"
+          }
+        }
+      }
+    },
+    "No Hot Clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum Ada Klip Hot"
+          }
+        }
+      }
+    },
+    "No answer within 45 seconds — %@ is overloaded for this model right now. Try again later." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada jawaban dalam 45 detik — %@ sedang sibuk untuk model ini. Coba lagi nanti."
+          }
+        }
+      }
+    },
+    "No moment in this clip stands out enough to work as a teaser." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada momen di klip ini yang cukup menonjol untuk dijadikan teaser."
+          }
+        }
+      }
+    },
+    "No speech in this clip." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada ucapan di klip ini."
+          }
+        }
+      }
+    },
+    "No speech was found in this video." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ditemukan ucapan di video ini."
+          }
+        }
+      }
+    },
+    "No subtitle file was attached, so the video was transcribed with Apple speech recognition." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada file subtitle yang dilampirkan, jadi video ditranskripsi dengan pengenalan suara Apple."
+          }
+        }
+      }
+    },
+    "None" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak Ada"
+          }
+        }
+      }
+    },
+    "None of the suggested hooks fit this clip. Try again." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada hook yang disarankan yang cocok untuk klip ini. Coba lagi."
+          }
+        }
+      }
+    },
+    "Not included in the free tier. It needs a paid (billing-enabled) key." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak termasuk versi gratis. Perlu kunci berbayar (billing aktif)."
+          }
+        }
+      }
+    },
+    "Not installed" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum terpasang"
+          }
+        }
+      }
+    },
+    "Not offered to your API key (unknown or unreleased model ID)." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak tersedia untuk kunci API Anda (ID model tidak dikenal atau belum dirilis)."
+          }
+        }
+      }
+    },
+    "Not started" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum dimulai"
+          }
+        }
+      }
+    },
+    "Not supported on this Mac" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak didukung di Mac ini"
+          }
+        }
+      }
+    },
+    "Note" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Catatan"
+          }
+        }
+      }
+    },
+    "Nothing Saved" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum Ada yang Disimpan"
+          }
+        }
+      }
+    },
+    "Number of clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jumlah klip"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "Off" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mati"
+          }
+        }
+      }
+    },
+    "Offers free models. Uses your own key." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menyediakan model gratis. Memakai kunci milik Anda."
+          }
+        }
+      }
+    },
+    "On" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyala"
+          }
+        }
+      }
+    },
+    "On this Mac" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di Mac ini"
+          }
+        }
+      }
+    },
+    "On-device transcription doesn’t support %@ yet. Attach a subtitle file or pick another language." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkripsi di perangkat belum mendukung %@. Lampirkan file subtitle atau pilih bahasa lain."
+          }
+        }
+      }
+    },
+    "One Word Earlier" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Satu Kata Lebih Awal"
+          }
+        }
+      }
+    },
+    "One Word Later" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Satu Kata Lebih Akhir"
+          }
+        }
+      }
+    },
+    "Only one speaker is on screen at a time in this clip, so it uses the full-frame layout." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip ini hanya memperlihatkan satu pembicara dalam satu waktu, jadi memakai tata letak satu layar penuh."
+          }
+        }
+      }
+    },
+    "Opacity" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opasitas"
+          }
+        }
+      }
+    },
+    "Open Export Folder" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka Folder Ekspor"
+          }
+        }
+      }
+    },
+    "Open Tools Folder" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka Folder Alat"
+          }
+        }
+      }
+    },
+    "Open the video with this moment and play it from the start" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka video dengan momen ini dan putar dari awal"
+          }
+        }
+      }
+    },
+    "OpenAI’s Whisper running on this Mac. Often more accurate, especially for Indonesian and mixed languages. The model is downloaded once, then works offline." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Whisper dari OpenAI yang berjalan di Mac ini. Sering lebih akurat, terutama untuk bahasa Indonesia dan campuran bahasa. Modelnya diunduh sekali, lalu bisa dipakai offline."
+          }
+        }
+      }
+    },
+    "Opens the video with a 2–3 second moment from later in the clip, then plays the clip from its start. The video gets that much longer." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membuka video dengan momen 2–3 detik dari bagian akhir klip, lalu memutar klip dari awal. Durasi video bertambah sepanjang itu."
+          }
+        }
+      }
+    },
+    "Optional, e.g. “money advice” or “funny moments”" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opsional, misalnya “tips keuangan” atau “momen lucu”"
+          }
+        }
+      }
+    },
+    "Optional, shown above" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opsional, tampil di atas"
+          }
+        }
+      }
+    },
+    "Optional. Converts unusual formats (WebM, AV1) when a site offers nothing else." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opsional. Mengonversi format tak umum (WebM, AV1) bila situs tidak menyediakan yang lain."
+          }
+        }
+      }
+    },
+    "Or use a file on this Mac" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atau pakai file di Mac ini"
+          }
+        }
+      }
+    },
+    "Outline" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Garis tepi"
+          }
+        }
+      }
+    },
+    "Outline width" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tebal garis tepi"
+          }
+        }
+      }
+    },
+    "Outside the trimmed clip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di luar klip yang dipangkas"
+          }
+        }
+      }
+    },
+    "Over the Video" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di Atas Video"
+          }
+        }
+      }
+    },
+    "Paid API. Uses your own key." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API berbayar. Memakai kunci milik Anda."
+          }
+        }
+      }
+    },
+    "Part of the trimmed clip hasn’t been checked and is shown full-frame. Click Follow Faces Again to check it." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sebagian klip yang dipangkas belum diperiksa dan ditampilkan satu layar penuh. Klik Ikuti Wajah Lagi untuk memeriksanya."
+          }
+        }
+      }
+    },
+    "Paste a YouTube link and AnyClip checks whether it has a transcript." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempel tautan YouTube dan AnyClip akan memeriksa apakah ada transkripnya."
+          }
+        }
+      }
+    },
+    "Paste a YouTube, TikTok, Instagram or X link, choose a file, or drop a video onto the window. Already have subtitles? Attach them to skip transcription." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempel tautan YouTube, TikTok, Instagram, atau X, pilih file, atau seret video ke jendela. Sudah punya subtitle? Lampirkan untuk melewati transkripsi."
+          }
+        }
+      }
+    },
+    "Paste a link or drop a video. AnyClip transcribes it on this Mac, picks the strongest moments and frames them for vertical video." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempel tautan atau seret video. AnyClip mentranskripsinya di Mac ini, memilih momen terkuat, dan membingkainya untuk video vertikal."
+          }
+        }
+      }
+    },
+    "Paste your key" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempel kunci Anda"
+          }
+        }
+      }
+    },
+    "Pause" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeda"
+          }
+        }
+      }
+    },
+    "Pause (Space)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeda (Spasi)"
+          }
+        }
+      }
+    },
+    "Photo" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto"
+          }
+        }
+      }
+    },
+    "Pick a caption style, add a hook title that grabs attention in the first seconds, and export everything automatically when it’s done." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih gaya teks, tambahkan judul hook yang menarik perhatian di detik-detik pertama, dan ekspor semuanya otomatis saat selesai."
+          }
+        }
+      }
+    },
+    "Pick how many clips you want, how long they are and their format. Keep faces in frame follows the speaker, and Focus tells the AI what to look for." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih jumlah klip, durasi, dan formatnya. Jaga wajah tetap di bingkai akan mengikuti pembicara, dan Fokus memberi tahu AI apa yang harus dicari."
+          }
+        }
+      }
+    },
+    "Placement" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penempatan"
+          }
+        }
+      }
+    },
+    "Play" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Putar"
+          }
+        }
+      }
+    },
+    "Play (Space)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Putar (Spasi)"
+          }
+        }
+      }
+    },
+    "Play Opening" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Putar Pembuka"
+          }
+        }
+      }
+    },
+    "Play or Pause" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Putar atau Jeda"
+          }
+        }
+      }
+    },
+    "Play or pause (Space)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Putar atau jeda (Spasi)"
+          }
+        }
+      }
+    },
+    "Play this moment where it happens in the clip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Putar momen ini di posisi aslinya dalam klip"
+          }
+        }
+      }
+    },
+    "Playback" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pemutaran"
+          }
+        }
+      }
+    },
+    "Playback stopped: %@." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pemutaran berhenti: %@."
+          }
+        }
+      }
+    },
+    "Plays the video from the first frame: the teaser, then the clip." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memutar video dari bingkai pertama: teaser, lalu klipnya."
+          }
+        }
+      }
+    },
+    "Pop" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pop"
+          }
+        }
+      }
+    },
+    "Position" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posisi"
+          }
+        }
+      }
+    },
+    "Post" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Postingan"
+          }
+        }
+      }
+    },
+    "Poster" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poster"
+          }
+        }
+      }
+    },
+    "Preparing preview…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menyiapkan pratinjau…"
+          }
+        }
+      }
+    },
+    "Preparing the model for this Mac (first time only)…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menyiapkan model untuk Mac ini (hanya pertama kali)…"
+          }
+        }
+      }
+    },
+    "Preview this moment" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pratinjau momen ini"
+          }
+        }
+      }
+    },
+    "Previous" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sebelumnya"
+          }
+        }
+      }
+    },
+    "Previous step (←)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langkah sebelumnya (←)"
+          }
+        }
+      }
+    },
+    "Private Cloud Compute runs Apple’s larger model on Apple silicon servers. Your transcript isn’t stored or visible to Apple." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private Cloud Compute menjalankan model Apple yang lebih besar di server Apple silicon. Transkrip Anda tidak disimpan dan tidak bisa dilihat Apple."
+          }
+        }
+      }
+    },
+    "Project" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek"
+          }
+        }
+      }
+    },
+    "Project Not Found" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek Tidak Ditemukan"
+          }
+        }
+      }
+    },
+    "Projects" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek"
+          }
+        }
+      }
+    },
+    "Projects and exports in progress will stop. You can use Try Again on a stopped project the next time you open AnyClip." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek dan ekspor yang sedang berjalan akan berhenti. Anda dapat memilih Coba Lagi pada proyek yang berhenti saat AnyClip dibuka berikutnya."
+          }
+        }
+      }
+    },
+    "Projects are made one at a time. This one starts automatically after the %lld projects ahead of it." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek diproses satu per satu. Proyek ini mulai otomatis setelah %lld proyek di depannya selesai."
+          }
+        }
+      }
+    },
+    "Projects are made one at a time. This one starts automatically when the current project is finished." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek diproses satu per satu. Proyek ini mulai otomatis setelah proyek yang sedang berjalan selesai."
+          }
+        }
+      }
+    },
+    "Projects you create appear here." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek yang Anda buat muncul di sini."
+          }
+        }
+      }
+    },
+    "Quality" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kualitas"
+          }
+        }
+      }
+    },
+    "Quit" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keluar"
+          }
+        }
+      }
+    },
+    "Quit While Clips Are Being Made?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keluar Saat Klip Sedang Dibuat?"
+          }
+        }
+      }
+    },
+    "Raises a question viewers will want answered." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memunculkan pertanyaan yang ingin dijawab penonton."
+          }
+        }
+      }
+    },
+    "Ready" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siap"
+          }
+        }
+      }
+    },
+    "Relatable" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relate"
+          }
+        }
+      }
+    },
+    "Remove" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus"
+          }
+        }
+      }
+    },
+    "Remove Key" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Kunci"
+          }
+        }
+      }
+    },
+    "Remove from Saved" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus dari Simpanan"
+          }
+        }
+      }
+    },
+    "Remove from Saved (⌘D)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus dari Simpanan (⌘D)"
+          }
+        }
+      }
+    },
+    "Remove video" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus video"
+          }
+        }
+      }
+    },
+    "Render this clip to your export folder (⌘E)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Render klip ini ke folder ekspor (⌘E)"
+          }
+        }
+      }
+    },
+    "Renders every clip as a video file into %@ as soon as the project is ready, so you don’t have to export them one by one." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merender semua klip menjadi file video ke %@ begitu proyek siap, jadi Anda tidak perlu mengekspornya satu per satu."
+          }
+        }
+      }
+    },
+    "Repeat Onboarding" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulangi Pengenalan"
+          }
+        }
+      }
+    },
+    "Replaces the cards with new suggestions from the transcript." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengganti kartu dengan saran baru dari transkrip."
+          }
+        }
+      }
+    },
+    "Replaces these clips with a new set. The video and transcript are reused." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengganti klip ini dengan kumpulan baru. Video dan transkrip digunakan kembali."
+          }
+        }
+      }
+    },
+    "Requests go to %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permintaan dikirim ke %@"
+          }
+        }
+      }
+    },
+    "Resolution" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resolusi"
+          }
+        }
+      }
+    },
+    "Restore Original Words" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kembalikan Kata Asli"
+          }
+        }
+      }
+    },
+    "Review your clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tinjau klip Anda"
+          }
+        }
+      }
+    },
+    "Rise" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naik"
+          }
+        }
+      }
+    },
+    "Safari" : {},
+    "Save Key" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan Kunci"
+          }
+        }
+      }
+    },
+    "Save clips to" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan klip ke"
+          }
+        }
+      }
+    },
+    "Saved" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tersimpan"
+          }
+        }
+      }
+    },
+    "Saved in Keychain" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tersimpan di Keychain"
+          }
+        }
+      }
+    },
+    "Score" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skor"
+          }
+        }
+      }
+    },
+    "Score %lld of 10" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skor %lld dari 10"
+          }
+        }
+      }
+    },
+    "Scoring moments…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menilai momen…"
+          }
+        }
+      }
+    },
+    "Search clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari klip"
+          }
+        }
+      }
+    },
+    "See exactly what you’ll export" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lihat persis apa yang akan diekspor"
+          }
+        }
+      }
+    },
+    "Set Clip End to Playhead" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atur Akhir Klip ke Playhead"
+          }
+        }
+      }
+    },
+    "Set Clip Start to Playhead" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atur Awal Klip ke Playhead"
+          }
+        }
+      }
+    },
+    "Settings (⌘,) has dark mode, export quality, AI keys, your watermark and download tools. You can repeat this tour any time from Settings › General." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengaturan (⌘,) berisi mode gelap, kualitas ekspor, kunci AI, watermark, dan alat unduhan. Anda bisa mengulangi tur ini kapan saja dari Pengaturan › Umum."
+          }
+        }
+      }
+    },
+    "Shadow" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bayangan"
+          }
+        }
+      }
+    },
+    "Shape your clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atur klip Anda"
+          }
+        }
+      }
+    },
+    "Share the exported clip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bagikan klip yang diekspor"
+          }
+        }
+      }
+    },
+    "Show B-roll" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan B-roll"
+          }
+        }
+      }
+    },
+    "Show Hook Ideas" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lihat Ide Hook"
+          }
+        }
+      }
+    },
+    "Show Source in Finder" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan Sumber di Finder"
+          }
+        }
+      }
+    },
+    "Show captions" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan teks"
+          }
+        }
+      }
+    },
+    "Show for" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampil selama"
+          }
+        }
+      }
+    },
+    "Show hook title" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan judul hook"
+          }
+        }
+      }
+    },
+    "Show in Finder" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan di Finder"
+          }
+        }
+      }
+    },
+    "Show or hide the inspector" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan atau sembunyikan inspektor"
+          }
+        }
+      }
+    },
+    "Show the exported clip in Finder" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan klip yang diekspor di Finder"
+          }
+        }
+      }
+    },
+    "Shown at the top of the clip in the first seconds — the line that stops the scroll." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampil di bagian atas klip pada detik-detik awal — kalimat yang menghentikan scroll."
+          }
+        }
+      }
+    },
+    "Shows a short, attention-grabbing title over the first seconds of each clip. You can edit or turn it off in the editor." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menampilkan judul singkat yang menarik perhatian di detik-detik awal setiap klip. Anda bisa mengubah atau mematikannya di editor."
+          }
+        }
+      }
+    },
+    "Shows the speaker on the right of the video in the top panel." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menampilkan pembicara di sisi kanan video pada panel atas."
+          }
+        }
+      }
+    },
+    "Side Accent" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aksen Samping"
+          }
+        }
+      }
+    },
+    "Sign-in" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login"
+          }
+        }
+      }
+    },
+    "Size" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukuran"
+          }
+        }
+      }
+    },
+    "Skip Tour" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lewati Tur"
+          }
+        }
+      }
+    },
+    "Slightly more accurate, three times larger." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sedikit lebih akurat, ukurannya tiga kali lebih besar."
+          }
+        }
+      }
+    },
+    "Small" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Small"
+          }
+        }
+      }
+    },
+    "Small text" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teks kecil"
+          }
+        }
+      }
+    },
+    "Sort" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urutkan"
+          }
+        }
+      }
+    },
+    "Sort clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urutkan klip"
+          }
+        }
+      }
+    },
+    "Spoken language" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bahasa ucapan"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Awal"
+          }
+        }
+      }
+    },
+    "Start One Second Earlier" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai Satu Detik Lebih Awal"
+          }
+        }
+      }
+    },
+    "Start One Second Later" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai Satu Detik Lebih Lambat"
+          }
+        }
+      }
+    },
+    "Start Tour" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai Tur"
+          }
+        }
+      }
+    },
+    "Start with a teaser" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai dengan teaser"
+          }
+        }
+      }
+    },
+    "Start with an Empty Library" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai dengan Pustaka Kosong"
+          }
+        }
+      }
+    },
+    "Starts in the middle of a sentence." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dimulai di tengah kalimat."
+          }
+        }
+      }
+    },
+    "Step %lld of %lld" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langkah %lld dari %lld"
+          }
+        }
+      }
+    },
+    "Stop" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hentikan"
+          }
+        }
+      }
+    },
+    "Stopped" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dihentikan"
+          }
+        }
+      }
+    },
+    "Story" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerita"
+          }
+        }
+      }
+    },
+    "Strip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strip"
+          }
+        }
+      }
+    },
+    "Strong Statement" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pernyataan Kuat"
+          }
+        }
+      }
+    },
+    "Style" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gaya"
+          }
+        }
+      }
+    },
+    "Subtitle file" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File subtitle"
+          }
+        }
+      }
+    },
+    "Suggest Again" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sarankan Lagi"
+          }
+        }
+      }
+    },
+    "Suggest Cards Again" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sarankan Kartu Lagi"
+          }
+        }
+      }
+    },
+    "Suggest Hooks" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sarankan Hook"
+          }
+        }
+      }
+    },
+    "Suggest Moments" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sarankan Momen"
+          }
+        }
+      }
+    },
+    "Suggested by %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disarankan oleh %@"
+          }
+        }
+      }
+    },
+    "Suggestions" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saran"
+          }
+        }
+      }
+    },
+    "Swap Speakers" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tukar Posisi Pembicara"
+          }
+        }
+      }
+    },
+    "System Default" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default Sistem"
+          }
+        }
+      }
+    },
+    "System Default follows the appearance you’ve chosen in System Settings." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default Sistem mengikuti tampilan yang Anda pilih di Pengaturan Sistem."
+          }
+        }
+      }
+    },
+    "Teaser" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teaser"
+          }
+        }
+      }
+    },
+    "Test Connection" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uji Koneksi"
+          }
+        }
+      }
+    },
+    "Text" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teks"
+          }
+        }
+      }
+    },
+    "Text on a rounded card. Clean and easy to read on any video." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teks di atas kartu membulat. Rapi dan mudah dibaca di video apa pun."
+          }
+        }
+      }
+    },
+    "The WhisperKit model couldn’t be downloaded. Check your internet connection and try again. (%@)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Model WhisperKit tidak bisa diunduh. Periksa koneksi internet lalu coba lagi. (%@)"
+          }
+        }
+      }
+    },
+    "The YouTube transcript couldn’t be read." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip YouTube tidak bisa dibaca."
+          }
+        }
+      }
+    },
+    "The clip and your edits to it are removed from AnyClip. A video you already exported stays in your export folder." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip dan hasil edit Anda dihapus dari AnyClip. Video yang sudah diekspor tetap ada di folder ekspor Anda."
+          }
+        }
+      }
+    },
+    "The download finished but no video file was found." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unduhan selesai tetapi file video tidak ditemukan."
+          }
+        }
+      }
+    },
+    "The downloaded video, transcript and clips are permanently removed from AnyClip. Exported clips stay in your export folder unless you choose to delete them too — they’re moved to the Trash." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video yang diunduh, transkrip, dan klip dihapus permanen dari AnyClip. Klip yang sudah diekspor tetap di folder ekspor, kecuali Anda memilih menghapusnya juga — klip itu dipindahkan ke Tong Sampah."
+          }
+        }
+      }
+    },
+    "The hook title says the same thing as this teaser." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Judul hook mengatakan hal yang sama dengan teaser ini."
+          }
+        }
+      }
+    },
+    "The key couldn’t be saved in your Keychain: %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci tidak dapat disimpan di Keychain Anda: %@"
+          }
+        }
+      }
+    },
+    "The key isn’t allowed to use this model." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci ini tidak diizinkan memakai model ini."
+          }
+        }
+      }
+    },
+    "The library file may be damaged. You can start with an empty library — the old file is kept in AnyClip’s folder so it isn’t lost — or quit and restore it from a backup.\n\n%@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File pustaka mungkin rusak. Anda dapat memulai dengan pustaka kosong — file lama disimpan di folder AnyClip agar tidak hilang — atau keluar dan memulihkannya dari cadangan.\n\n%@"
+          }
+        }
+      }
+    },
+    "The preview didn’t show any video. Other apps may be using the Mac’s video decoders, or the source file is damaged." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pratinjau tidak menampilkan video. Mungkin app lain sedang memakai dekoder video Mac, atau file sumbernya rusak."
+          }
+        }
+      }
+    },
+    "The project page tells you when this happens and why %@ failed." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halaman proyek akan memberi tahu bila ini terjadi dan kenapa %@ gagal."
+          }
+        }
+      }
+    },
+    "The project stops with the error from %@. Choose Try Again after fixing it — the video and transcript are reused." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek berhenti dengan pesan error dari %@. Pilih Coba Lagi setelah diperbaiki — video dan transkrip dipakai ulang."
+          }
+        }
+      }
+    },
+    "The project was stopped before it finished." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek dihentikan sebelum selesai."
+          }
+        }
+      }
+    },
+    "The published checksum for %@ couldn’t be found, so it wasn’t installed. Try again later." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checksum yang dipublikasikan untuk %@ tidak ditemukan, jadi tidak diinstal. Coba lagi nanti."
+          }
+        }
+      }
+    },
+    "The site refused the download. Try again in a minute, update yt-dlp in Settings › Downloads, or turn on browser cookies there." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Situs menolak unduhan. Coba lagi sebentar lagi, perbarui yt-dlp di Pengaturan › Unduhan, atau aktifkan cookie browser di sana."
+          }
+        }
+      }
+    },
+    "The source file has no video track." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File sumber tidak memiliki trek video."
+          }
+        }
+      }
+    },
+    "The speaker shows strong feeling here." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pembicara menunjukkan perasaan yang kuat di sini."
+          }
+        }
+      }
+    },
+    "The stacked layout is available in the 9:16 format." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tata letak bertumpuk tersedia dalam format 9:16."
+          }
+        }
+      }
+    },
+    "The thumbnail couldn’t be saved." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thumbnail tidak dapat disimpan."
+          }
+        }
+      }
+    },
+    "The video couldn’t be decoded for preview: %@." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video tidak bisa didekode untuk pratinjau: %@."
+          }
+        }
+      }
+    },
+    "The video is too short or has too little speech to make clips." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video terlalu pendek atau ucapannya terlalu sedikit untuk dibuat klip."
+          }
+        }
+      }
+    },
+    "Thickness" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ketebalan"
+          }
+        }
+      }
+    },
+    "This clip couldn’t be prepared: %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip ini tidak bisa disiapkan: %@"
+          }
+        }
+      }
+    },
+    "This clip has no B-roll yet. Add a card at the playhead or let AnyClip suggest some." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip ini belum punya B-roll. Tambahkan kartu di playhead atau biarkan AnyClip menyarankan."
+          }
+        }
+      }
+    },
+    "This clip has too little speech for a teaser." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip ini terlalu sedikit ucapannya untuk dibuat teaser."
+          }
+        }
+      }
+    },
+    "This clip is too short for a teaser." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip ini terlalu pendek untuk teaser."
+          }
+        }
+      }
+    },
+    "This clip’s timing couldn’t be turned into video. Try nudging the trim handles slightly." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu klip ini tidak bisa dijadikan video. Coba geser sedikit pegangan potongnya."
+          }
+        }
+      }
+    },
+    "This feature works best with footage where both speakers remain visible in a consistent camera shot. Videos that frequently switch between speakers or camera angles may produce different layouts throughout the clip." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fitur ini paling cocok untuk rekaman yang memperlihatkan kedua pembicara dalam satu bidikan kamera yang konsisten. Video yang sering berpindah antarpembicara atau sudut kamera bisa menghasilkan tata letak yang berganti-ganti di sepanjang klip."
+          }
+        }
+      }
+    },
+    "This hook says the same thing as the teaser. A hook that adds context or asks a question works better." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hook ini mengatakan hal yang sama dengan teaser. Hook yang menambah konteks atau mengajukan pertanyaan lebih efektif."
+          }
+        }
+      }
+    },
+    "This is part of the clip’s opening, so viewers hear it twice in a row." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ini bagian dari pembuka klip, jadi penonton mendengarnya dua kali berturut-turut."
+          }
+        }
+      }
+    },
+    "This is the starting style. You can change the captions of each clip in the editor’s Captions tab." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ini gaya awalnya. Anda bisa mengubah teks setiap klip di tab Teks pada editor."
+          }
+        }
+      }
+    },
+    "This isn’t a YouTube link, so AnyClip will use Apple speech recognition instead." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ini bukan tautan YouTube, jadi AnyClip akan memakai pengenalan suara Apple."
+          }
+        }
+      }
+    },
+    "This moment is outside the trimmed clip, so the video starts without a teaser. Choose another moment." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Momen ini berada di luar klip yang dipangkas, jadi video dimulai tanpa teaser. Pilih momen lain."
+          }
+        }
+      }
+    },
+    "This project stopped before all its clips were made." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek ini berhenti sebelum semua klipnya selesai dibuat."
+          }
+        }
+      }
+    },
+    "This video doesn’t have a YouTube transcript." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video ini tidak punya transkrip YouTube."
+          }
+        }
+      }
+    },
+    "This video has %lld transcripts. Choose the language that’s spoken in the video — the others are usually translations, so captions wouldn’t match what’s said." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video ini punya %lld transkrip. Pilih bahasa yang diucapkan di video — yang lain biasanya terjemahan, jadi teksnya tidak akan cocok dengan ucapannya."
+          }
+        }
+      }
+    },
+    "This video has no YouTube transcript. AnyClip will use Apple speech recognition instead, or choose WhisperKit." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video ini tidak punya transkrip YouTube. AnyClip akan memakai pengenalan suara Apple, atau pilih WhisperKit."
+          }
+        }
+      }
+    },
+    "This video uses a format macOS can’t play. Install ffmpeg with Homebrew (brew install ffmpeg) and try again." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video ini memakai format yang tidak bisa diputar macOS. Pasang ffmpeg lewat Homebrew (brew install ffmpeg) lalu coba lagi."
+          }
+        }
+      }
+    },
+    "Tilt" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Miring"
+          }
+        }
+      }
+    },
+    "Timing" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu"
+          }
+        }
+      }
+    },
+    "Title" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Judul"
+          }
+        }
+      }
+    },
+    "Tools" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alat"
+          }
+        }
+      }
+    },
+    "Top Left" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiri Atas"
+          }
+        }
+      }
+    },
+    "Top Right" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kanan Atas"
+          }
+        }
+      }
+    },
+    "Tracking faces" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Melacak wajah"
+          }
+        }
+      }
+    },
+    "Transcribing" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mentranskripsi"
+          }
+        }
+      }
+    },
+    "Transcript" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip"
+          }
+        }
+      }
+    },
+    "Transcript available in %@, added by the creator." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip tersedia dalam %@, dibuat oleh kreator."
+          }
+        }
+      }
+    },
+    "Transcript available in %@, generated by YouTube." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip tersedia dalam %@, dibuat otomatis oleh YouTube."
+          }
+        }
+      }
+    },
+    "Transcript language" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bahasa transkrip"
+          }
+        }
+      }
+    },
+    "Transcript: %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip: %@"
+          }
+        }
+      }
+    },
+    "Transcription" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkripsi"
+          }
+        }
+      }
+    },
+    "Trim" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Potong"
+          }
+        }
+      }
+    },
+    "Trim to the word" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Potong tepat di kata"
+          }
+        }
+      }
+    },
+    "Try Again" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coba Lagi"
+          }
+        }
+      }
+    },
+    "Turn a long video into short clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubah video panjang jadi klip pendek"
+          }
+        }
+      }
+    },
+    "Turn long videos into short, captioned clips — free, private and right on your Mac. This quick tour shows you how it works." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubah video panjang menjadi klip pendek lengkap dengan teks — gratis, privat, dan langsung di Mac Anda. Tur singkat ini menunjukkan cara kerjanya."
+          }
+        }
+      }
+    },
+    "Turn on Apple Intelligence in System Settings" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktifkan Apple Intelligence di Pengaturan Sistem"
+          }
+        }
+      }
+    },
+    "Two-Speaker Stacked Layout" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tata Letak Dua Pembicara Bertumpuk"
+          }
+        }
+      }
+    },
+    "Type" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jenis"
+          }
+        }
+      }
+    },
+    "Unavailable" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak tersedia"
+          }
+        }
+      }
+    },
+    "Undo" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urungkan"
+          }
+        }
+      }
+    },
+    "Update" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perbarui"
+          }
+        }
+      }
+    },
+    "Upload SRT or VTT" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unggah SRT atau VTT"
+          }
+        }
+      }
+    },
+    "Use" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai"
+          }
+        }
+      }
+    },
+    "Use Default Folder" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai Folder Bawaan"
+          }
+        }
+      }
+    },
+    "Use Private Cloud Compute for long videos" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai Private Cloud Compute untuk video panjang"
+          }
+        }
+      }
+    },
+    "Use as Teaser" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jadikan Teaser"
+          }
+        }
+      }
+    },
+    "Use cookies from" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai cookie dari"
+          }
+        }
+      }
+    },
+    "Use subtitles you already have, such as an .srt or .vtt file exported from your editor. Captions will match your file exactly." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai subtitle yang sudah Anda punya, misalnya file .srt atau .vtt dari aplikasi editor. Teks klip akan sama persis dengan file Anda."
+          }
+        }
+      }
+    },
+    "Using the video’s own captions…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memakai subtitle bawaan video…"
+          }
+        }
+      }
+    },
+    "Very short — it may pass before viewers notice it." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sangat pendek — bisa lewat sebelum penonton menyadarinya."
+          }
+        }
+      }
+    },
+    "Video" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video"
+          }
+        }
+      }
+    },
+    "Video Order" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urutan Video"
+          }
+        }
+      }
+    },
+    "Video format" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format video"
+          }
+        }
+      }
+    },
+    "Virality score" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skor viral"
+          }
+        }
+      }
+    },
+    "Waiting" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menunggu"
+          }
+        }
+      }
+    },
+    "Waiting in queue" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menunggu antrean"
+          }
+        }
+      }
+    },
+    "Watermark" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watermark"
+          }
+        }
+      }
+    },
+    "Welcome to AnyClip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selamat datang di AnyClip"
+          }
+        }
+      }
+    },
+    "Welcome tour" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tur pengenalan"
+          }
+        }
+      }
+    },
+    "When only one speaker is on screen, AnyClip shows that part full-frame." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat hanya satu pembicara yang terlihat, AnyClip menampilkan bagian itu satu layar penuh."
+          }
+        }
+      }
+    },
+    "When your clips are ready, open one to trim it on word boundaries, edit captions and the hook, adjust framing with keyframes, then export with ⌘E." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat klip sudah siap, buka salah satunya untuk memotong tepat di batas kata, mengedit teks dan hook, mengatur pembingkaian dengan keyframe, lalu ekspor dengan ⌘E."
+          }
+        }
+      }
+    },
+    "WhisperKit" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WhisperKit"
+          }
+        }
+      }
+    },
+    "WhisperKit couldn’t transcribe this video: %@ Apple speech recognition was used instead." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WhisperKit tidak bisa mentranskripsi video ini: %@ Pengenalan suara Apple dipakai sebagai gantinya."
+          }
+        }
+      }
+    },
+    "WhisperKit didn’t hear any speech in this video." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WhisperKit tidak mendengar ucapan apa pun di video ini."
+          }
+        }
+      }
+    },
+    "Who picks the moments" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siapa yang memilih momen"
+          }
+        }
+      }
+    },
+    "Word" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kata"
+          }
+        }
+      }
+    },
+    "Word box" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kotak kata"
+          }
+        }
+      }
+    },
+    "Word color" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warna kata"
+          }
+        }
+      }
+    },
+    "Word timings here are approximate — check the cut in the preview." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu kata di sini hanya perkiraan — periksa potongannya di pratinjau."
+          }
+        }
+      }
+    },
+    "Words at a time" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kata per tampilan"
+          }
+        }
+      }
+    },
+    "Works · %@ s" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berfungsi · %@ dtk"
+          }
+        }
+      }
+    },
+    "Writes hooks that add to the teaser instead of repeating it." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menulis hook yang melengkapi teaser, bukan mengulanginya."
+          }
+        }
+      }
+    },
+    "Writes new hooks from what the speaker says in this clip." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menulis hook baru dari ucapan pembicara di klip ini."
+          }
+        }
+      }
+    },
+    "Writing hooks needs Apple Intelligence or an AI provider in Settings › AI." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menulis hook membutuhkan Apple Intelligence atau penyedia AI di Pengaturan › AI."
+          }
+        }
+      }
+    },
+    "You can keep working while this runs. New projects wait their turn and start automatically." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anda bisa tetap bekerja selama proses berjalan. Proyek baru akan mengantre dan dimulai otomatis."
+          }
+        }
+      }
+    },
+    "YouTube Transcript" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip YouTube"
+          }
+        }
+      }
+    },
+    "YouTube Transcript needs a YouTube link. For a file on this Mac, AnyClip uses Apple speech recognition instead." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip YouTube membutuhkan tautan YouTube. Untuk file di Mac ini, AnyClip memakai pengenalan suara Apple."
+          }
+        }
+      }
+    },
+    "YouTube Transcript only works with YouTube links, so this video was transcribed with Apple speech recognition." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip YouTube hanya bisa dipakai untuk tautan YouTube, jadi video ini ditranskripsi dengan pengenalan suara Apple."
+          }
+        }
+      }
+    },
+    "YouTube Transcript only works with YouTube links." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip YouTube hanya bisa dipakai untuk tautan YouTube."
+          }
+        }
+      }
+    },
+    "YouTube, TikTok, Instagram, X or any video link" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tautan YouTube, TikTok, Instagram, X, atau video apa pun"
+          }
+        }
+      }
+    },
+    "Your projects" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyek Anda"
+          }
+        }
+      }
+    },
+    "Your subtitle file" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File subtitle Anda"
+          }
+        }
+      }
+    },
+    "Your subtitle file had no readable captions, so the video was transcribed with Apple speech recognition." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File subtitle Anda tidak berisi teks yang bisa dibaca, jadi video ditranskripsi dengan pengenalan suara Apple."
+          }
+        }
+      }
+    },
+    "Your transcript is sent to %@ when you create a project. The key is stored in your Keychain and only sent to %@." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip Anda dikirim ke %@ saat Anda membuat proyek. Kunci disimpan di Keychain dan hanya dikirim ke %@."
+          }
+        }
+      }
+    },
+    "Your transcript is sent to %@ with your own API key." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip Anda dikirim ke %@ dengan kunci API milik Anda."
+          }
+        }
+      }
+    },
+    "Your transcript stays on this Mac. If Apple Intelligence is off, AnyClip uses built-in scoring." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkrip Anda tetap di Mac ini. Jika Apple Intelligence mati, AnyClip memakai penilaian bawaan."
+          }
+        }
+      }
+    },
+    "You’re all set" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua siap"
+          }
+        }
+      }
+    },
+    "You’ve trimmed the clip since these were suggested. Suggest Again to look at the new range." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip sudah dipangkas sejak saran ini dibuat. Pilih Sarankan Lagi untuk mencari di rentang yang baru."
+          }
+        }
+      }
+    },
+    "Zoom" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoom"
+          }
+        }
+      }
+    },
+    "macOS couldn’t start an export for this clip." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS tidak dapat memulai ekspor untuk klip ini."
+          }
+        }
+      }
+    },
+    "the finished file has no playable video (length %@). Please export again." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "file hasilnya tidak berisi video yang bisa diputar (durasi %@). Silakan ekspor lagi."
+          }
+        }
+      }
+    },
+    "yt-dlp isn’t installed yet. It’s installed automatically when you create the project." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "yt-dlp belum terpasang. yt-dlp akan dipasang otomatis saat Anda membuat proyek."
+          }
+        }
+      }
+    },
+    "yt-dlp isn’t installed. Open Settings › Downloads to install it." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "yt-dlp belum terpasang. Buka Pengaturan › Unduhan untuk memasangnya."
+          }
+        }
+      }
+    },
+    "“%@” couldn’t be exported: %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” gagal diekspor: %@"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
