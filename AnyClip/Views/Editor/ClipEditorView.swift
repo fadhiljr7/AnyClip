@@ -695,6 +695,57 @@ struct FramingInspector: View {
     }
 }
 
+/// A label with its copy icon right under it, and the editable text beside them.
+struct PostTextRow: View {
+    let title: LocalizedStringKey
+    let copyLabel: LocalizedStringKey
+    @Binding var text: String
+    var prompt: LocalizedStringKey?
+    let lines: ClosedRange<Int>
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 16) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(title)
+                CopyIconButton(label: copyLabel, text: text)
+            }
+            .fixedSize()
+            TextField(title, text: $text, prompt: prompt.map { Text($0) }, axis: .vertical)
+                .labelsHidden()
+                .multilineTextAlignment(.trailing)
+                .lineLimit(lines)
+        }
+    }
+}
+
+/// Copies one piece of text, and shows a checkmark for a moment to say it worked.
+struct CopyIconButton: View {
+    let label: LocalizedStringKey
+    let text: String
+    @State private var copies = 0
+
+    var body: some View {
+        Button {
+            NSPasteboard.general.clearContents()
+            NSPasteboard.general.setString(text, forType: .string)
+            copies += 1
+        } label: {
+            Image(systemName: copies > 0 ? "checkmark" : "doc.on.doc")
+                .frame(width: 24, height: 24, alignment: .leading)
+                .contentShape(.rect)
+        }
+        .buttonStyle(.borderless)
+        .disabled(text.isEmpty)
+        .help(label)
+        .accessibilityLabel(label)
+        .task(id: copies) {
+            guard copies > 0 else { return }
+            try? await Task.sleep(for: .seconds(1.5))
+            if !Task.isCancelled { copies = 0 }
+        }
+    }
+}
+
 struct DetailsInspector: View {
     @Bindable var clip: Clip
     let transcript: Transcript?
@@ -702,10 +753,8 @@ struct DetailsInspector: View {
     var body: some View {
         Form {
             Section("Post") {
-                TextField("Title", text: $clip.title, axis: .vertical)
-                    .lineLimit(1...3)
-                TextField("Caption", text: $clip.summary, prompt: Text("A short teaser for the post"), axis: .vertical)
-                    .lineLimit(2...6)
+                PostTextRow(title: "Title", copyLabel: "Copy Title", text: $clip.title, lines: 1...3)
+                PostTextRow(title: "Caption", copyLabel: "Copy Caption", text: $clip.summary, prompt: "A short teaser for the post", lines: 2...6)
                 Picker("Category", selection: Binding(get: { clip.category }, set: { clip.category = $0 })) {
                     ForEach(ClipCategory.allCases, id: \.self) { Label($0.label, systemImage: $0.symbol).tag($0) }
                 }

@@ -51,11 +51,20 @@ nonisolated enum AppPaths {
     /// else, such as another project with the same title, is never overwritten.
     static func exportFile(in folder: URL, index: Int, title: String, previous: URL?,
                            exists: (URL) -> Bool = { FileManager.default.fileExists(atPath: $0.path(percentEncoded: false)) }) -> URL {
-        let stem = String(format: "%02d ", index + 1) + safeFileName(title)
-        var candidate = folder.appending(path: stem + ".mp4")
+        unusedFile(in: folder, stem: String(format: "%02d ", index + 1) + safeFileName(title), ext: "mp4", previous: previous, exists: exists)
+    }
+
+    /// Where a clip's exported cover image goes, e.g. "01 Thumbnail.jpg", under the same no-overwrite rule.
+    static func thumbnailFile(in folder: URL, index: Int, previous: URL?,
+                              exists: (URL) -> Bool = { FileManager.default.fileExists(atPath: $0.path(percentEncoded: false)) }) -> URL {
+        unusedFile(in: folder, stem: String(format: "%02d Thumbnail", index + 1), ext: "jpg", previous: previous, exists: exists)
+    }
+
+    private static func unusedFile(in folder: URL, stem: String, ext: String, previous: URL?, exists: (URL) -> Bool) -> URL {
+        var candidate = folder.appending(path: "\(stem).\(ext)")
         var copy = 2
         while exists(candidate), candidate.standardizedFileURL != previous?.standardizedFileURL {
-            candidate = folder.appending(path: "\(stem) \(copy).mp4")
+            candidate = folder.appending(path: "\(stem) \(copy).\(ext)")
             copy += 1
         }
         return candidate

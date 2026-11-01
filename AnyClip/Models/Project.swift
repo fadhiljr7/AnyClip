@@ -188,6 +188,8 @@ final class Clip {
     var editedTo: Double = 0
     var exportedPath: String?
     var exportedAt: Date?
+    /// The exported cover image, the first frame of the exported video.
+    var exportedThumbnailPath: String?
     var revision: Int = 0
     var brollData: Data = Data()
     var brollEnabled: Bool = true
@@ -320,6 +322,11 @@ final class Clip {
     var exportedURL: URL? {
         guard let exportedPath, FileManager.default.fileExists(atPath: exportedPath) else { return nil }
         return URL(filePath: exportedPath)
+    }
+
+    var exportedThumbnailURL: URL? {
+        guard let exportedThumbnailPath, FileManager.default.fileExists(atPath: exportedThumbnailPath) else { return nil }
+        return URL(filePath: exportedThumbnailPath)
     }
 
     var thumbnailURL: URL? { project.map { $0.folder.appending(path: "clip-\(id.uuidString).jpg") } }

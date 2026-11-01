@@ -71,6 +71,7 @@ Paste a link or drop in a video. AnyClip transcribes it, finds the moments that 
 - Trim by word on a speech timeline
 - Edit captions directly, with a live preview that matches the export
 - H.264 or HEVC, from 720p up to 4K
+- Every export comes with its thumbnail: the video's first frame, ready to upload
 - Library with search, Hot and Saved clips
 
 </td>

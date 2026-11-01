@@ -41,6 +41,22 @@ struct FileSafetyTests {
         #expect(url.lastPathComponent == "01 New.mp4")
     }
 
+    @Test func thumbnailsAreNamedAfterTheClipNumber() {
+        let url = AppPaths.thumbnailFile(in: folder, index: 0, previous: nil, exists: { _ in false })
+        #expect(url.lastPathComponent == "01 Thumbnail.jpg")
+        #expect(AppPaths.thumbnailFile(in: folder, index: 11, previous: nil, exists: { _ in false }).lastPathComponent == "12 Thumbnail.jpg")
+    }
+
+    @Test func exportingAgainReplacesTheClipsOwnThumbnail() {
+        let own = folder.appending(path: "01 Thumbnail.jpg")
+        #expect(AppPaths.thumbnailFile(in: folder, index: 0, previous: own, exists: { $0 == own }) == own)
+    }
+
+    @Test func anotherProjectsThumbnailIsNeverOverwritten() {
+        let own = folder.appending(path: "01 Thumbnail.jpg")
+        #expect(AppPaths.thumbnailFile(in: folder, index: 0, previous: nil, exists: { $0 == own }).lastPathComponent == "01 Thumbnail 2.jpg")
+    }
+
     @Test func replacingWorksWithAndWithoutAnExistingFile() throws {
         let dir = try temporaryFolder()
         defer { try? FileManager.default.removeItem(at: dir) }

@@ -28,6 +28,8 @@ final class PreviewController {
     private var statusObservation: NSKeyValueObservation?
     private var failObserver: NSObjectProtocol?
     private var displayWatchdog: Task<Void, Never>?
+    /// The player view's latest report. It can stay true across a change of video, with no new report to wait for.
+    private var displayReady = false
 
     private var videoKey = ""
     private var overlayKey = ""
@@ -90,6 +92,7 @@ final class PreviewController {
 
     /// Called by the player view when the first video frame is (or is no longer) on screen.
     func displayReadyChanged(_ ready: Bool) {
+        displayReady = ready
         guard ready else { return }
         if isLoading { engineLog("preview frame on screen") }
         displayWatchdog?.cancel()
@@ -126,7 +129,11 @@ final class PreviewController {
                 self?.error = String(localized: "Playback stopped: \(message ?? "unknown error").")
             }
         }
-        // If no frame shows up in time, say so instead of leaving a black screen.
+        startDisplayWatchdog()
+    }
+
+    /// If no frame shows up in time, says so instead of leaving a spinner or a black screen.
+    private func startDisplayWatchdog() {
         displayWatchdog?.cancel()
         displayWatchdog = Task { [weak self] in
             try? await Task.sleep(for: .seconds(12))
@@ -164,6 +171,7 @@ final class PreviewController {
     private func reload(_ input: RenderInput) {
         loadTask?.cancel()
         isLoading = true
+        startDisplayWatchdog()
         let keepTime = currentTime
         let wasPlaying = isPlaying
         loadTask = Task { [weak self] in
@@ -201,6 +209,8 @@ final class PreviewController {
                 await self.player.seek(to: CMTime(seconds: fromStart ? 0 : min(keepTime, max(0, built.duration - 0.1)), preferredTimescale: 600),
                                   toleranceBefore: .zero, toleranceAfter: .zero)
                 if wasPlaying || fromStart { self.player.play() }
+                // The new video's frame is up, whether or not the view had a change to report.
+                if self.displayReady, item.status == .readyToPlay { self.displayReadyChanged(true) }
             } catch is CancellationError {
             } catch {
                 self.error = String(localized: "This clip couldn’t be prepared: \(error.localizedDescription)")

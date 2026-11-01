@@ -8,6 +8,7 @@
 import Testing
 import Foundation
 import AVFoundation
+import ImageIO
 @testable import AnyClip
 
 struct ExportTests {
@@ -36,6 +37,37 @@ struct ExportTests {
         #expect(abs(try await asset.load(.duration).seconds - 3) < 0.2)
         let track = try await #require(asset.loadTracks(withMediaType: .video).first)
         #expect(try await track.load(.naturalSize) == CGSize(width: 360, height: 640))
+    }
+
+    @Test func theThumbnailIsTheVideosFirstFrame() async throws {
+        let video = try await makeTwoColourVideo()
+        let folder = FileManager.default.temporaryDirectory.appending(path: "anyclip-export-\(UUID().uuidString)", directoryHint: .isDirectory)
+        try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
+        defer {
+            try? FileManager.default.removeItem(at: video)
+            try? FileManager.default.removeItem(at: folder)
+        }
+        let url = folder.appending(path: "01 Thumbnail.jpg")
+        try Data("an old thumbnail".utf8).write(to: url)
+        try await ClipExporter.saveFirstFrame(of: video, to: url)
+        #expect(try folderContents(folder) == ["01 Thumbnail.jpg"])
+        let source = try #require(CGImageSourceCreateWithURL(url as CFURL, nil))
+        let image = try #require(CGImageSourceCreateImageAtIndex(source, 0, nil))
+        #expect(image.width == 1280 && image.height == 720)
+        #expect(CGImageSourceGetType(source) as String? == "public.jpeg")
+    }
+
+    @Test func aFailedThumbnailKeepsTheEarlierOne() async throws {
+        let folder = FileManager.default.temporaryDirectory.appending(path: "anyclip-export-\(UUID().uuidString)", directoryHint: .isDirectory)
+        try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
+        defer { try? FileManager.default.removeItem(at: folder) }
+        let url = folder.appending(path: "01 Thumbnail.jpg")
+        try Data("the earlier thumbnail".utf8).write(to: url)
+        await #expect(throws: (any Error).self) {
+            try await ClipExporter.saveFirstFrame(of: folder.appending(path: "missing.mp4"), to: url)
+        }
+        #expect(try String(contentsOf: url, encoding: .utf8) == "the earlier thumbnail")
+        #expect(try folderContents(folder) == ["01 Thumbnail.jpg"])
     }
 
     @Test func aFailedExportKeepsTheEarlierFile() async throws {

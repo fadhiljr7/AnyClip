@@ -1297,6 +1297,16 @@
         }
       }
     },
+    "Copy Caption" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salin Keterangan"
+          }
+        }
+      }
+    },
     "Copy Title" : {
       "localizations" : {
         "id" : {
@@ -5797,6 +5807,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "“%@” gagal diekspor: %@"
+          }
+        }
+      }
+    },
+    "“%@” was exported, but its thumbnail couldn’t be saved: %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” berhasil diekspor, tetapi thumbnail-nya tidak dapat disimpan: %@"
           }
         }
       }

@@ -628,6 +628,20 @@ nonisolated enum ClipExporter {
         }
     }
 
+    /// Saves the first frame of a finished video as a JPEG, captions and hook included, replacing `url` in one step.
+    @concurrent
+    static func saveFirstFrame(of video: URL, to url: URL) async throws {
+        let generator = AVAssetImageGenerator(asset: AVURLAsset(url: video))
+        generator.appliesPreferredTrackTransform = true
+        generator.requestedTimeToleranceBefore = .zero
+        generator.requestedTimeToleranceAfter = .zero
+        let (image, _) = try await generator.image(at: .zero)
+        let partial = url.deletingLastPathComponent().appending(path: ".\(UUID().uuidString).jpg")
+        defer { try? FileManager.default.removeItem(at: partial) }
+        try writeJPEG(image, to: partial, quality: 0.92)
+        try AppPaths.replace(url, with: partial)
+    }
+
     /// A still of the reframed clip, without overlays, saved as JPEG.
     @concurrent
     static func thumbnail(_ input: RenderInput, to url: URL, at offset: Double = 1.0) async throws {
@@ -650,11 +664,11 @@ nonisolated enum ClipExporter {
         return image
     }
 
-    static func writeJPEG(_ image: CGImage, to url: URL) throws {
+    static func writeJPEG(_ image: CGImage, to url: URL, quality: Double = 0.82) throws {
         guard let dest = CGImageDestinationCreateWithURL(url as CFURL, UTType.jpeg.identifier as CFString, 1, nil) else {
             throw RenderError.imageNotWritten
         }
-        CGImageDestinationAddImage(dest, image, [kCGImageDestinationLossyCompressionQuality: 0.82] as CFDictionary)
+        CGImageDestinationAddImage(dest, image, [kCGImageDestinationLossyCompressionQuality: quality] as CFDictionary)
         guard CGImageDestinationFinalize(dest) else { throw RenderError.imageNotWritten }
     }
 }

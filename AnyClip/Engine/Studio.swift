@@ -72,8 +72,10 @@ final class Studio {
     /// with yt-dlp, transcribe or ask the AI provider at once.
     private(set) var waiting: [PendingRun] = []
     /// Recently used transcripts. Long videos have tens of thousands of words, so only a few are kept in memory.
-    private var transcripts: [UUID: Transcript] = [:]
-    private var transcriptUse: [UUID] = []
+    /// Views read transcripts while they draw, so this bookkeeping must stay out of observation: if it were
+    /// observed, every read would make the view that did it draw again, without end.
+    @ObservationIgnored private var transcripts: [UUID: Transcript] = [:]
+    @ObservationIgnored private var transcriptUse: [UUID] = []
     private static let transcriptsKept = 4
     private var exportTask: Task<Void, Never>?
     private var currentExport: (clip: UUID, task: Task<Void, Never>)?
@@ -192,7 +194,7 @@ final class Studio {
         let id = project.id
         let folder = project.folder
         let clipIDs = Set(project.clips.map(\.id))
-        let exported = includeExports ? project.clips.compactMap(\.exportedURL) : []
+        let exported = includeExports ? project.clips.flatMap { [$0.exportedURL, $0.exportedThumbnailURL].compactMap { $0 } } : []
         pendingExports.removeAll { clipIDs.contains($0.id) }
         exportQueue.removeAll { clipIDs.contains($0) }
         waiting.removeAll { $0.project.id == id }
@@ -747,11 +749,27 @@ final class Studio {
             clip.exportedPath = url.path(percentEncoded: false)
             clip.exportedAt = Date()
             debugLog("exported \(url.path(percentEncoded: false))")
+            await exportThumbnail(of: clip, video: url, in: folder)
         } catch {
             if !(error is CancellationError) && !Task.isCancelled {
                 lastExportError = String(localized: "“\(clip.title)” couldn’t be exported: \(error.localizedDescription)")
             }
             debugLog("export failed: \(error)")
+        }
+    }
+
+    /// Saves the video's first frame beside it, ready to upload as its cover. The video is fine without it, so a
+    /// failure here only says so.
+    private func exportThumbnail(of clip: Clip, video: URL, in folder: URL) async {
+        let url = AppPaths.thumbnailFile(in: folder, index: clip.index, previous: clip.exportedThumbnailURL)
+        do {
+            try await ClipExporter.saveFirstFrame(of: video, to: url)
+            guard clip.modelContext != nil else { return }
+            clip.exportedThumbnailPath = url.path(percentEncoded: false)
+            debugLog("exported \(url.path(percentEncoded: false))")
+        } catch {
+            lastExportError = String(localized: "“\(clip.title)” was exported, but its thumbnail couldn’t be saved: \(error.localizedDescription)")
+            debugLog("thumbnail export failed: \(error)")
         }
     }
 }
