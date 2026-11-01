@@ -342,6 +342,16 @@
         }
       }
     },
+    "Account" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akun"
+          }
+        }
+      }
+    },
     "Add Card at Playhead" : {
       "localizations" : {
         "id" : {
@@ -402,6 +412,16 @@
         }
       }
     },
+    "Add your Google client ID in Settings › YouTube first." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan ID klien Google Anda di Pengaturan › YouTube terlebih dahulu."
+          }
+        }
+      }
+    },
     "Adds 1–3 animated keyword cards to each clip. You can edit or remove them in the editor." : {
       "localizations" : {
         "id" : {
@@ -458,6 +478,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semua klip Anda di satu tempat"
+          }
+        }
+      }
+    },
+    "Already scheduled for %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sudah dijadwalkan pada %@"
           }
         }
       }
@@ -559,6 +589,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "AnyClip tidak memiliki salinan video ini. Buat proyek baru dari file aslinya."
+          }
+        }
+      }
+    },
+    "AnyClip only asks to upload videos and read your channel’s name. Sign-in stays in your Keychain, and nothing passes through any AnyClip server." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AnyClip hanya meminta izin untuk mengunggah video dan membaca nama channel Anda. Info masuk tetap di Keychain Anda, dan tidak ada yang melewati server AnyClip."
           }
         }
       }
@@ -716,12 +756,32 @@
         }
       }
     },
+    "Audience" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penonton"
+          }
+        }
+      }
+    },
     "Auto" : {
       "localizations" : {
         "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otomatis"
+          }
+        }
+      }
+    },
+    "Auto Schedule" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jadwal Otomatis"
           }
         }
       }
@@ -937,6 +997,16 @@
         }
       }
     },
+    "Cancel Upload" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batalkan Unggahan"
+          }
+        }
+      }
+    },
     "Cancel this export" : {
       "localizations" : {
         "id" : {
@@ -1127,6 +1197,16 @@
         }
       }
     },
+    "Choose a time at least 15 minutes from now, so there’s time to render and upload." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih waktu minimal 15 menit dari sekarang, agar ada waktu untuk merender dan mengunggah."
+          }
+        }
+      }
+    },
     "Choose…" : {
       "localizations" : {
         "id" : {
@@ -1153,6 +1233,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bersih"
+          }
+        }
+      }
+    },
+    "Client ID" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ID Klien"
+          }
+        }
+      }
+    },
+    "Client secret" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rahasia klien"
           }
         }
       }
@@ -1247,6 +1347,26 @@
         }
       }
     },
+    "Connect your YouTube account first." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hubungkan akun YouTube Anda terlebih dahulu."
+          }
+        }
+      }
+    },
+    "Connect your YouTube account in Settings › YouTube first." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hubungkan akun YouTube Anda di Pengaturan › YouTube terlebih dahulu."
+          }
+        }
+      }
+    },
     "Connected" : {
       "localizations" : {
         "id" : {
@@ -1263,6 +1383,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Koneksi"
+          }
+        }
+      }
+    },
+    "Connect…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hubungkan…"
           }
         }
       }
@@ -1457,6 +1587,16 @@
         }
       }
     },
+    "Days" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari"
+          }
+        }
+      }
+    },
     "Delete" : {
       "localizations" : {
         "id" : {
@@ -1573,6 +1713,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deteksi Otomatis"
+          }
+        }
+      }
+    },
+    "Disconnect" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Putuskan"
           }
         }
       }
@@ -1743,6 +1893,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lepas untuk memakai video ini"
+          }
+        }
+      }
+    },
+    "Each clip’s title and caption are used. Clips are rendered as they are now and uploaded as private, and YouTube makes them public at their time, even if this Mac is off. Keep AnyClip open until the uploads finish. To show your thumbnail on a Short, upload it in YouTube Studio." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Judul dan keterangan tiap klip akan digunakan. Klip dirender sesuai kondisinya sekarang dan diunggah sebagai privat, lalu YouTube menjadikannya publik pada waktunya, meski Mac ini mati. Biarkan AnyClip terbuka sampai unggahan selesai. Agar thumbnail Anda tampil di Shorts, unggah di YouTube Studio."
           }
         }
       }
@@ -2128,6 +2288,16 @@
       }
     },
     "Firefox" : {},
+    "First video" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video pertama"
+          }
+        }
+      }
+    },
     "Focus" : {
       "localizations" : {
         "id" : {
@@ -2349,6 +2519,16 @@
       }
     },
     "Google Chrome" : {},
+    "Google didn’t allow the connection: %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Google tidak mengizinkan koneksi: %@"
+          }
+        }
+      }
+    },
     "H.264 (most compatible)" : {
       "localizations" : {
         "id" : {
@@ -2429,6 +2609,16 @@
         }
       }
     },
+    "Hours" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jam"
+          }
+        }
+      }
+    },
     "If %@ fails, use Apple Intelligence instead" : {
       "localizations" : {
         "id" : {
@@ -2445,6 +2635,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impact"
+          }
+        }
+      }
+    },
+    "Import Client File…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impor File Klien…"
           }
         }
       }
@@ -2535,6 +2735,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Memasang yt-dlp…"
+          }
+        }
+      }
+    },
+    "Interval" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interval"
           }
         }
       }
@@ -2839,6 +3049,16 @@
         }
       }
     },
+    "Made for kids" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dibuat untuk anak-anak"
+          }
+        }
+      }
+    },
     "Make Clips Again" : {
       "localizations" : {
         "id" : {
@@ -2880,6 +3100,16 @@
       }
     },
     "Microsoft Edge" : {},
+    "Minutes" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menit"
+          }
+        }
+      }
+    },
     "Model" : {
       "localizations" : {
         "id" : {
@@ -3120,6 +3350,16 @@
         }
       }
     },
+    "Not made for kids" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bukan untuk anak-anak"
+          }
+        }
+      }
+    },
     "Not offered to your API key (unknown or unreleased model ID)." : {
       "localizations" : {
         "id" : {
@@ -3290,12 +3530,42 @@
         }
       }
     },
+    "Open Google Cloud Console" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka Google Cloud Console"
+          }
+        }
+      }
+    },
     "Open Tools Folder" : {
       "localizations" : {
         "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Buka Folder Alat"
+          }
+        }
+      }
+    },
+    "Open YouTube Settings…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka Pengaturan YouTube…"
+          }
+        }
+      }
+    },
+    "Open on YouTube" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka di YouTube"
           }
         }
       }
@@ -3326,6 +3596,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Membuka video dengan momen 2–3 detik dari bagian akhir klip, lalu memutar klip dari awal. Durasi video bertambah sepanjang itu."
+          }
+        }
+      }
+    },
+    "Optional" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opsional"
           }
         }
       }
@@ -3790,6 +4070,16 @@
         }
       }
     },
+    "Publishes" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terbit"
+          }
+        }
+      }
+    },
     "Quality" : {
       "localizations" : {
         "id" : {
@@ -3910,6 +4200,16 @@
         }
       }
     },
+    "Rendering the video…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merender video…"
+          }
+        }
+      }
+    },
     "Renders every clip as a video file into %@ as soon as the project is ready, so you don’t have to export them one by one." : {
       "localizations" : {
         "id" : {
@@ -4001,6 +4301,16 @@
       }
     },
     "Safari" : {},
+    "Save" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan"
+          }
+        }
+      }
+    },
     "Save Key" : {
       "localizations" : {
         "id" : {
@@ -4037,6 +4347,56 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tersimpan di Keychain"
+          }
+        }
+      }
+    },
+    "Schedule %lld Videos" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jadwalkan %lld Video"
+          }
+        }
+      }
+    },
+    "Schedule 1 Video" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jadwalkan 1 Video"
+          }
+        }
+      }
+    },
+    "Schedule Again…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jadwalkan Lagi…"
+          }
+        }
+      }
+    },
+    "Schedule clips to publish on YouTube" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jadwalkan klip untuk terbit di YouTube"
+          }
+        }
+      }
+    },
+    "Scheduled on YouTube for %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dijadwalkan di YouTube pada %@"
           }
         }
       }
@@ -4091,6 +4451,26 @@
         }
       }
     },
+    "Select All" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih Semua"
+          }
+        }
+      }
+    },
+    "Select None" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batalkan Pilihan"
+          }
+        }
+      }
+    },
     "Set Clip End to Playhead" : {
       "localizations" : {
         "id" : {
@@ -4107,6 +4487,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Atur Awal Klip ke Playhead"
+          }
+        }
+      }
+    },
+    "Setting the thumbnail…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memasang thumbnail…"
           }
         }
       }
@@ -4291,6 +4681,16 @@
         }
       }
     },
+    "Sign-in was cancelled." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proses masuk dibatalkan."
+          }
+        }
+      }
+    },
     "Size" : {
       "localizations" : {
         "id" : {
@@ -4437,6 +4837,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dimulai di tengah kalimat."
+          }
+        }
+      }
+    },
+    "Status" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
           }
         }
       }
@@ -4651,6 +5061,16 @@
         }
       }
     },
+    "That file isn’t a Google client file." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File itu bukan file klien Google."
+          }
+        }
+      }
+    },
     "The WhisperKit model couldn’t be downloaded. Check your internet connection and try again. (%@)" : {
       "localizations" : {
         "id" : {
@@ -4791,6 +5211,16 @@
         }
       }
     },
+    "The scheduled time has already passed. Choose a new time and schedule this clip again." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu yang dijadwalkan sudah lewat. Pilih waktu baru dan jadwalkan klip ini lagi."
+          }
+        }
+      }
+    },
     "The site refused the download. Try again in a minute, update yt-dlp in Settings › Downloads, or turn on browser cookies there." : {
       "localizations" : {
         "id" : {
@@ -4831,6 +5261,16 @@
         }
       }
     },
+    "The thumbnail couldn’t be made, so YouTube will choose one." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thumbnail tidak dapat dibuat, jadi YouTube akan memilihkannya."
+          }
+        }
+      }
+    },
     "The thumbnail couldn’t be saved." : {
       "localizations" : {
         "id" : {
@@ -4851,12 +5291,32 @@
         }
       }
     },
+    "The video is scheduled, but YouTube didn’t accept its thumbnail: %@ Custom thumbnails need a verified YouTube channel." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video sudah dijadwalkan, tetapi YouTube tidak menerima thumbnail-nya: %@ Thumbnail kustom memerlukan channel YouTube terverifikasi."
+          }
+        }
+      }
+    },
     "The video is too short or has too little speech to make clips." : {
       "localizations" : {
         "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video terlalu pendek atau ucapannya terlalu sedikit untuk dibuat klip."
+          }
+        }
+      }
+    },
+    "Then one every" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lalu satu setiap"
           }
         }
       }
@@ -5037,6 +5497,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Miring"
+          }
+        }
+      }
+    },
+    "Times use your time zone: %@." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu menggunakan zona waktu Anda: %@."
           }
         }
       }
@@ -5271,6 +5741,26 @@
         }
       }
     },
+    "Unit" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Satuan"
+          }
+        }
+      }
+    },
+    "Untitled clip" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip tanpa judul"
+          }
+        }
+      }
+    },
     "Update" : {
       "localizations" : {
         "id" : {
@@ -5287,6 +5777,46 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unggah SRT atau VTT"
+          }
+        }
+      }
+    },
+    "Upload to YouTube" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unggah ke YouTube"
+          }
+        }
+      }
+    },
+    "Upload to YouTube…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unggah ke YouTube…"
+          }
+        }
+      }
+    },
+    "Uploading to YouTube" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengunggah ke YouTube"
+          }
+        }
+      }
+    },
+    "Uploading to YouTube…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengunggah ke YouTube…"
           }
         }
       }
@@ -5417,6 +5947,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menunggu"
+          }
+        }
+      }
+    },
+    "Waiting for you to sign in, in your browser…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menunggu Anda masuk di browser…"
           }
         }
       }
@@ -5621,6 +6161,7 @@
         }
       }
     },
+    "YouTube" : {},
     "YouTube Transcript" : {
       "localizations" : {
         "id" : {
@@ -5661,12 +6202,102 @@
         }
       }
     },
+    "YouTube account" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akun YouTube"
+          }
+        }
+      }
+    },
+    "YouTube answered with an error (%lld): %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "YouTube menjawab dengan galat (%lld): %@"
+          }
+        }
+      }
+    },
+    "YouTube ended the upload session." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "YouTube mengakhiri sesi unggahan."
+          }
+        }
+      }
+    },
+    "YouTube requires each app to have a Google client. As an open-source app, AnyClip uses your own, for free. In Google Cloud: create a project, enable YouTube Data API v3, set up the OAuth consent screen and add your account as a test user, then create an OAuth client of type Desktop app." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "YouTube mewajibkan setiap aplikasi memiliki klien Google. Sebagai aplikasi sumber terbuka, AnyClip memakai klien milik Anda, gratis. Di Google Cloud: buat proyek, aktifkan YouTube Data API v3, siapkan layar persetujuan OAuth dan tambahkan akun Anda sebagai pengguna uji, lalu buat klien OAuth dengan tipe Desktop app."
+          }
+        }
+      }
+    },
+    "YouTube sign-in has expired. Connect your account again in Settings › YouTube." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info masuk YouTube sudah kedaluwarsa. Hubungkan akun Anda lagi di Pengaturan › YouTube."
+          }
+        }
+      }
+    },
+    "YouTube upload failed" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unggahan YouTube gagal"
+          }
+        }
+      }
+    },
     "YouTube, TikTok, Instagram, X or any video link" : {
       "localizations" : {
         "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tautan YouTube, TikTok, Instagram, X, atau video apa pun"
+          }
+        }
+      }
+    },
+    "YouTube’s daily limit is used up. Uploads carry on at %@ while AnyClip is open." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batas harian YouTube sudah habis. Unggahan berlanjut pada %@ selama AnyClip terbuka."
+          }
+        }
+      }
+    },
+    "YouTube’s daily upload limit has been reached." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batas unggahan harian YouTube sudah tercapai."
+          }
+        }
+      }
+    },
+    "Your Google Client" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klien Google Anda"
           }
         }
       }

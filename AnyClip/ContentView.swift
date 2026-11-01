@@ -32,7 +32,13 @@ struct ContentView: View {
         } message: {
             Text(Studio.shared.lastExportError ?? "")
         }
-        .task { Studio.shared.recoverInterrupted(projects) }
+        .sheet(item: $state.youtubeRequest) { request in
+            YouTubeUploadSheet(request: request)
+        }
+        .task {
+            Studio.shared.recoverInterrupted(projects)
+            YouTubeUploads.shared.resume(projects.flatMap(\.clips))
+        }
         .task {
             // Let the first layout settle so the spotlight lands on real controls.
             try? await Task.sleep(for: .milliseconds(700))

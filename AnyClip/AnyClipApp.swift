@@ -28,6 +28,8 @@ final class AppState {
     var projectToDelete: Project?
     /// The clipboard state last offered as a link, so the same link isn't filled in again and again.
     var lastClipboardChange: Int?
+    /// The project whose clips are being scheduled for YouTube.
+    var youtubeRequest: YouTubeUploadRequest?
 }
 
 /// Dark Mode in Settings › General: follow the system, or force dark or light.
@@ -165,6 +167,11 @@ struct AppCommands: Commands {
             .disabled(project.map(Studio.shared.offersTryAgain) != true)
             Button("Stop") { if let project { Studio.shared.cancel(project) } }
                 .disabled(project.map(Studio.shared.isRunning) != true)
+            Divider()
+            Button("Upload to YouTube…") {
+                if let project { AppState.shared.youtubeRequest = YouTubeUploadRequest(project: project, preselected: nil) }
+            }
+            .disabled(project?.clips.isEmpty != false)
             Divider()
             Button("Show Source in Finder") {
                 if let project { NSWorkspace.shared.activateFileViewerSelecting([project.videoURL ?? project.folder]) }

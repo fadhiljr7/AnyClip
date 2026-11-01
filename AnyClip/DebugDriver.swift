@@ -338,6 +338,59 @@ enum DebugDriver {
             state.selection = .project(project.id)
         case "quit": NSApp.terminate(nil)
         case "stopall": Studio.shared.stopEverythingForQuit()
+        case "ytschedule":
+            // ytschedule <project index> <first, e.g. 2026-11-02T06:00:00+07:00> <minutes between>: the sheet's Schedule, for every unsent clip
+            guard parts.count > 3, let i = Int(parts[1]), i < projects.count,
+                  let first = ISO8601DateFormatter().date(from: parts[2]), let minutes = Int(parts[3]) else { return }
+            let clips = projects[i].sortedClips.filter { $0.youtubeState != .scheduled && $0.youtubeState != .queued }
+            let schedule = AutoSchedule(first: first, every: minutes, unit: .minutes)
+            YouTubeUploads.shared.schedule(clips, at: schedule.times(count: clips.count), madeForKids: false)
+        case "ytthumbtest":
+            // ytthumbtest <project index> <first> <minutes between>: its first two clips, the first with a PNG thumbnail
+            guard parts.count > 3, let i = Int(parts[1]), i < projects.count,
+                  let first = ISO8601DateFormatter().date(from: parts[2]), let minutes = Int(parts[3]) else { return }
+            let clips = Array(projects[i].sortedClips.prefix(2))
+            YouTubeUploads.shared.debugPNGClips = Set(clips.prefix(1).map(\.id))
+            let schedule = AutoSchedule(first: first, every: minutes, unit: .minutes)
+            YouTubeUploads.shared.schedule(clips, at: schedule.times(count: clips.count), madeForKids: false)
+        case "ytstatus":
+            for clip in projects.flatMap(\.sortedClips) where clip.youtubeState != nil {
+                Studio.shared.debugLog("youtube #\(clip.index + 1) \(clip.youtubeStateRaw ?? "") \(clip.youtubePublishAt.map { YouTubeTime.display($0) } ?? "") \(clip.youtubeVideoID ?? "") \(clip.youtubeError ?? "") \(clip.youtubeNotice ?? "")")
+            }
+        case "ytverify":
+            // Asks YouTube what it actually has for each scheduled clip. Read-only.
+            let ids = projects.flatMap(\.sortedClips).compactMap(\.youtubeVideoID)
+            busyUntil = Date().addingTimeInterval(20)
+            Task {
+                guard var components = URLComponents(string: "https://www.googleapis.com/youtube/v3/videos") else { return }
+                for start in stride(from: 0, to: ids.count, by: 50) {
+                    let batch = ids[start..<min(start + 50, ids.count)]
+                    components.queryItems = [URLQueryItem(name: "part", value: "snippet,status,processingDetails"),
+                                             URLQueryItem(name: "id", value: batch.joined(separator: ","))]
+                    guard let url = components.url, let token = try? await YouTubeTokens.shared.accessToken() else { continue }
+                    var request = URLRequest(url: url)
+                    request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+                    guard let (data, _) = try? await URLSession.shared.data(for: request),
+                          let object = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                          let items = object["items"] as? [[String: Any]] else { continue }
+                    for item in items {
+                        let snippet = item["snippet"] as? [String: Any], status = item["status"] as? [String: Any]
+                        let thumbs = (snippet?["thumbnails"] as? [String: Any])?.keys.sorted().joined(separator: ",") ?? ""
+                        let descriptionLength = (snippet?["description"] as? String)?.count ?? 0
+                        let line = "ytverify \(item["id"] ?? "") | \(status?["privacyStatus"] ?? "") | publishAt \(status?["publishAt"] ?? "") | upload \(status?["uploadStatus"] ?? "") | kids \(status?["madeForKids"] ?? "") | desc \(descriptionLength) | thumbs \(thumbs) | \(snippet?["title"] ?? "")"
+                        Studio.shared.debugLog(line)
+                        let sizes = (snippet?["thumbnails"] as? [String: [String: Any]]) ?? [:]
+                        for (name, info) in sizes.sorted(by: { $0.key < $1.key }) {
+                            Studio.shared.debugLog("ytthumb \(item["id"] ?? "") \(name) \(info["width"] ?? "")x\(info["height"] ?? "") \(info["url"] ?? "")")
+                        }
+                    }
+                }
+                busyUntil = .distantPast
+            }
+        case "ytsheet":
+            // ytsheet <project index>: opens the YouTube schedule window
+            let i = Int(parts.dropFirst().first ?? "0") ?? 0
+            if i < projects.count { state.youtubeRequest = YouTubeUploadRequest(project: projects[i], preselected: nil) }
         default: break
         }
     }

@@ -190,6 +190,14 @@ final class Clip {
     var exportedAt: Date?
     /// The exported cover image, the first frame of the exported video.
     var exportedThumbnailPath: String?
+    /// Where the clip is in the YouTube upload queue; nil when it was never sent.
+    var youtubeStateRaw: String?
+    var youtubePublishAt: Date?
+    var youtubeVideoID: String?
+    var youtubeMadeForKids: Bool = false
+    var youtubeError: String?
+    /// Something worth knowing about an upload that succeeded, e.g. a rejected thumbnail.
+    var youtubeNotice: String?
     var revision: Int = 0
     var brollData: Data = Data()
     var brollEnabled: Bool = true
@@ -323,6 +331,13 @@ final class Clip {
         guard let exportedPath, FileManager.default.fileExists(atPath: exportedPath) else { return nil }
         return URL(filePath: exportedPath)
     }
+
+    var youtubeState: YouTubeUploadState? {
+        get { youtubeStateRaw.flatMap(YouTubeUploadState.init(rawValue:)) }
+        set { youtubeStateRaw = newValue?.rawValue }
+    }
+
+    var youtubeURL: URL? { youtubeVideoID.flatMap { URL(string: "https://youtu.be/\($0)") } }
 
     var exportedThumbnailURL: URL? {
         guard let exportedThumbnailPath, FileManager.default.fileExists(atPath: exportedThumbnailPath) else { return nil }

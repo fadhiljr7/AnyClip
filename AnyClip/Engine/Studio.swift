@@ -143,7 +143,7 @@ final class Studio {
     }
 
     /// Something is being made or exported that quitting would stop.
-    var hasActiveWork: Bool { !jobs.isEmpty || !waiting.isEmpty || exportTask != nil }
+    var hasActiveWork: Bool { !jobs.isEmpty || !waiting.isEmpty || exportTask != nil || YouTubeUploads.shared.isActive }
 
     /// Stops all work when the app quits, so no download or conversion keeps running without it. The projects
     /// are offered Try Again at the next launch by `recoverInterrupted`.
@@ -151,6 +151,7 @@ final class Studio {
         waiting.removeAll()
         for job in jobs.values { job.cancel() }
         cancelExports()
+        YouTubeUploads.shared.stopForQuit()
         for job in teaserJobs.values { job.cancel() }
     }
 
@@ -158,6 +159,7 @@ final class Studio {
     func deleteClip(_ clip: Clip, context: ModelContext) {
         if let thumb = clip.thumbnailURL { try? FileManager.default.removeItem(at: thumb) }
         cancelExport(clip)
+        if clip.youtubeState == .queued { YouTubeUploads.shared.cancel(clip) }
         teaserJobs[clip.id]?.cancel()
         context.delete(clip)
     }
@@ -203,6 +205,7 @@ final class Studio {
         let export = currentExport.flatMap { clipIDs.contains($0.clip) ? $0.task : nil }
         export?.cancel()
         for clipID in clipIDs { teaserJobs[clipID]?.cancel() }
+        for clip in project.clips where clip.youtubeState == .queued { YouTubeUploads.shared.cancel(clip) }
         Task {
             // Wait for running work so nothing writes into the folder after it is gone.
             _ = await job?.value
@@ -733,29 +736,41 @@ final class Studio {
     var isExporting: Bool { exportTask != nil }
 
     private func exportOne(_ clip: Clip) async {
-        guard let input = renderInput(for: clip), let project = clip.project else { return }
-        let folder = AppPaths.exportFolder.appending(path: AppPaths.safeFileName(project.title, maxLength: 50), directoryHint: .isDirectory)
-        let url = AppPaths.exportFile(in: folder, index: clip.index, title: clip.title, previous: clip.exportedURL)
-        let hevc = AppSettings.videoCodec == .hevc
-        let id = clip.id
-        exporting[id] = 0
-        defer { exporting[id] = nil }
         do {
-            try await ClipExporter.export(input, to: url, hevc: hevc) { p in
-                Task { @MainActor in if Studio.shared.exporting[id] != nil { Studio.shared.exporting[id] = p } }
-            }
-            // The clip may have been deleted while it rendered; the finished file stays in the folder either way.
-            guard clip.modelContext != nil else { return }
-            clip.exportedPath = url.path(percentEncoded: false)
-            clip.exportedAt = Date()
-            debugLog("exported \(url.path(percentEncoded: false))")
-            await exportThumbnail(of: clip, video: url, in: folder)
+            _ = try await render(clip)
         } catch {
             if !(error is CancellationError) && !Task.isCancelled {
                 lastExportError = String(localized: "“\(clip.title)” couldn’t be exported: \(error.localizedDescription)")
             }
             debugLog("export failed: \(error)")
         }
+    }
+
+    /// Renders a clip as it is now, with its thumbnail, for the YouTube queue. Clips may have been edited since
+    /// their last export, so this is never skipped.
+    func renderForUpload(_ clip: Clip) async throws -> (video: URL, thumbnail: URL?) {
+        let video = try await render(clip)
+        return (video, clip.exportedThumbnailURL)
+    }
+
+    private func render(_ clip: Clip) async throws -> URL {
+        guard let input = renderInput(for: clip), let project = clip.project else { throw CancellationError() }
+        let folder = AppPaths.exportFolder.appending(path: AppPaths.safeFileName(project.title, maxLength: 50), directoryHint: .isDirectory)
+        let url = AppPaths.exportFile(in: folder, index: clip.index, title: clip.title, previous: clip.exportedURL)
+        let hevc = AppSettings.videoCodec == .hevc
+        let id = clip.id
+        exporting[id] = 0
+        defer { exporting[id] = nil }
+        try await ClipExporter.export(input, to: url, hevc: hevc) { p in
+            Task { @MainActor in if Studio.shared.exporting[id] != nil { Studio.shared.exporting[id] = p } }
+        }
+        // The clip may have been deleted while it rendered; the finished file stays in the folder either way.
+        guard clip.modelContext != nil else { throw CancellationError() }
+        clip.exportedPath = url.path(percentEncoded: false)
+        clip.exportedAt = Date()
+        debugLog("exported \(url.path(percentEncoded: false))")
+        await exportThumbnail(of: clip, video: url, in: folder)
+        return url
     }
 
     /// Saves the video's first frame beside it, ready to upload as its cover. The video is fine without it, so a

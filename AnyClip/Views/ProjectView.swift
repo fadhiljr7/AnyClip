@@ -45,6 +45,10 @@ struct ProjectView: View {
                         .pickerStyle(.inline)
                     }
                     .help("Sort clips")
+                    Button("Upload to YouTube", systemImage: "play.rectangle") {
+                        AppState.shared.youtubeRequest = YouTubeUploadRequest(project: project, preselected: nil)
+                    }
+                    .help("Schedule clips to publish on YouTube")
                     Button("Export All", systemImage: "square.and.arrow.up.on.square") {
                         Studio.shared.export(project.sortedClips)
                     }
@@ -322,6 +326,11 @@ struct ClipCard: View {
         .animation(.snappy(duration: 0.18), value: hovering)
         .contextMenu {
             Button("Export Clip") { Studio.shared.export([clip]) }
+            if let project = clip.project {
+                Button("Upload to YouTube…") {
+                    AppState.shared.youtubeRequest = YouTubeUploadRequest(project: project, preselected: clip.id)
+                }
+            }
             if let url = clip.exportedURL {
                 Button("Show in Finder") { NSWorkspace.shared.activateFileViewerSelecting([url]) }
                 ShareLink(item: url)
@@ -376,6 +385,7 @@ struct ClipCard: View {
                         Image(systemName: "checkmark.circle.fill")
                             .help("Exported")
                     }
+                    YouTubeBadge(clip: clip)
                     Spacer()
                     Text(formatDuration(clip.duration))
                         .font(.caption.weight(.semibold).monospacedDigit())

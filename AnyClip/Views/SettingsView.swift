@@ -17,6 +17,7 @@ struct SettingsView: View {
             Tab("Transcription", systemImage: "waveform", value: "transcription") { TranscriptionSettings() }
             Tab("Watermark", systemImage: "signature", value: "watermark") { WatermarkSettingsView() }
             Tab("Downloads", systemImage: "arrow.down.circle", value: "downloads") { DownloadSettings() }
+            Tab("YouTube", systemImage: "play.rectangle", value: "youtube") { YouTubeSettings() }
         }
         .frame(width: 580)
         .frame(minHeight: 440)

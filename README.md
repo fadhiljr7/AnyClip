@@ -73,6 +73,7 @@ Paste a link or drop in a video. AnyClip transcribes it, finds the moments that 
 - H.264 or HEVC, from 720p up to 4K
 - Every export comes with its thumbnail: the video's first frame, ready to upload
 - Library with search, Hot and Saved clips
+- Schedule clips straight to YouTube with Auto Schedule, using each clip's title and caption
 
 </td>
 <td valign="top">
@@ -116,6 +117,53 @@ open AnyClip.xcodeproj
 
 **Helper tools.** `yt-dlp` and Deno are only used for video links. AnyClip downloads them from their official GitHub releases when first needed and checks them against their published checksums. Files on your Mac don't need them. `ffmpeg` is optional and converts unusual formats: `brew install ffmpeg`.
 
+## Auto-upload to YouTube
+
+Schedule your clips from AnyClip. Each clip goes up as private with a publish time, and YouTube makes it public at that time, even if your Mac is off.
+
+### 1. Connect your account (once)
+
+YouTube requires every app to have a Google client. AnyClip is open source, so you use your own, for free.
+
+1. In [Google Cloud Console](https://console.cloud.google.com/projectcreate), create a project.
+2. Enable [YouTube Data API v3](https://console.cloud.google.com/apis/library/youtube.googleapis.com).
+3. In [Google Auth Platform](https://console.cloud.google.com/auth/overview), set up the consent screen with the **External** audience. Under [Audience](https://console.cloud.google.com/auth/audience), add the Gmail that owns your channel as a test user.
+4. In [Clients](https://console.cloud.google.com/auth/clients), create a client of type **Desktop app** and download its JSON file.
+5. In AnyClip, open **Settings › YouTube**, click **Import Client File…** and choose that file.
+6. Click **Connect…** and sign in with your channel's account. If Google says the app isn't verified, click **Advanced › Continue**. That's expected, because it's your own client.
+
+Your client and sign-in stay in your Mac's Keychain.
+
+### 2. Schedule your clips
+
+1. Open a project and click the **Upload to YouTube** toolbar button. It's also in the **Project** menu, and on a clip's right-click menu.
+2. Under **Auto Schedule**, set when the first video goes out and the gap between videos, in minutes, hours or days. Times use your Mac's time zone in 24-hour format.
+
+   For example, with a first video at `2 Nov 2026, 01:00` and a gap of 1 hour, the second video goes out at `2 Nov 2026, 02:00`.
+3. Tick the clips you want, or click **Select All**.
+4. Choose the audience, then click **Schedule**.
+5. Keep AnyClip open until the uploads finish. Each clip's status appears on its card and in the editor's **Details** tab.
+
+The clip's title becomes the YouTube title, and its caption becomes the description. Clips are rendered again just before upload, so your latest edits are included.
+
+### 3. Add the thumbnail by hand
+
+**The custom thumbnail must be uploaded manually.** Vertical clips become Shorts, and the thumbnail AnyClip sends through YouTube's API doesn't show as the Short's thumbnail.
+
+1. Find the thumbnail in your export folder, next to the video. It's named after the clip's number, such as `01 Thumbnail.jpg`.
+2. In [YouTube Studio](https://studio.youtube.com), open **Content › Shorts** and open the video.
+3. Under **Thumbnail**, click **Upload file** and choose the image, then save.
+
+YouTube may limit this option to some channels.
+
+### Troubleshooting
+
+| What you see | What to do |
+|---|---|
+| `Error 403: access_denied` when connecting | Add the Gmail you're signing in with as a test user, under [Audience](https://console.cloud.google.com/auth/audience) |
+| AnyClip asks you to connect again | Sign-ins can expire after about 7 days while your Google project is in Testing. Click **Connect…** again. Videos already uploaded still publish. |
+| Uploads pause at the daily limit | AnyClip carries on after YouTube's limit resets, as long as it stays open |
+
 ## Keyboard shortcuts
 
 | Shortcut | Action |
@@ -139,6 +187,7 @@ Your videos, transcripts and clips stay on your Mac. There is no AnyClip account
 | Videos, transcripts, library | Only on your Mac, in `~/Library/Application Support/AnyClip` |
 | Transcripts sent for AI | Only to the provider you chose. With Apple Intelligence, they normally stay on this Mac. |
 | API keys | Your macOS Keychain, and only ever sent to that provider |
+| YouTube sign-in | Your own Google client and sign-in stay in your macOS Keychain. Clips you schedule go only to your channel. |
 | Browser cookies | Off by default. If you turn them on, yt-dlp uses them on this Mac for sign-in to the video site. |
 
 ## How it's built

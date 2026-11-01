@@ -763,6 +763,7 @@ struct DetailsInspector: View {
                     NSPasteboard.general.setString([clip.title, clip.summary].filter { !$0.isEmpty }.joined(separator: "\n\n"), forType: .string)
                 }
             }
+            YouTubeClipSection(clip: clip)
             Section("Score") {
                 LabeledContent("Virality score") {
                     ScoreBadge(score: clip.score)
