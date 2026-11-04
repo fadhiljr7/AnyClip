@@ -425,8 +425,7 @@ final class Studio {
         // 4. Framing
         setStage(project, .framing)
         let caption = CaptionPreset.preset(options.captionPresetID).style
-        var hook = HookStyle()
-        hook.enabled = options.hookEnabled
+        let hook = HookPresetLibrary.shared.style(for: options.hookPresetID, shown: options.hookEnabled)
         let frameReport = reporter(id, .framing)
         for (i, moment) in moments.enumerated() {
             try Task.checkCancellation()
@@ -769,16 +768,16 @@ final class Studio {
         clip.exportedPath = url.path(percentEncoded: false)
         clip.exportedAt = Date()
         debugLog("exported \(url.path(percentEncoded: false))")
-        await exportThumbnail(of: clip, video: url, in: folder)
+        await exportThumbnail(of: clip, input: input, in: folder)
         return url
     }
 
-    /// Saves the video's first frame beside it, ready to upload as its cover. The video is fine without it, so a
-    /// failure here only says so.
-    private func exportThumbnail(of clip: Clip, video: URL, in folder: URL) async {
+    /// Saves the clip's opening frame beside the video, with its hook but without captions, ready to upload as its
+    /// cover. The video is fine without it, so a failure here only says so.
+    private func exportThumbnail(of clip: Clip, input: RenderInput, in folder: URL) async {
         let url = AppPaths.thumbnailFile(in: folder, index: clip.index, previous: clip.exportedThumbnailURL)
         do {
-            try await ClipExporter.saveFirstFrame(of: video, to: url)
+            try await ClipExporter.saveCover(input, to: url)
             guard clip.modelContext != nil else { return }
             clip.exportedThumbnailPath = url.path(percentEncoded: false)
             debugLog("exported \(url.path(percentEncoded: false))")

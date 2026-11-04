@@ -418,6 +418,11 @@ struct HookInspector: View {
     @State private var hookError: String?
     /// Changed to bring the hook title section into view.
     @State private var showHook = 0
+    @State private var namingPreset = false
+    @State private var presetName = ""
+    @State private var confirmingApplyAll = false
+    @State private var deletingPreset: HookPreset?
+    private let presets = HookPresetLibrary.shared
 
     var body: some View {
         let teaser = Studio.shared.teaserText(for: clip)
@@ -467,6 +472,7 @@ struct HookInspector: View {
                     .foregroundStyle(.secondary)
             }
             .id("hookTitle")
+            presetSection
             Section("Timing") {
                 Toggle("Keep for the whole clip", isOn: Binding(get: { style.duration == 0 },
                                                                  set: { style.duration = $0 ? 0 : 4 }))
@@ -498,6 +504,77 @@ struct HookInspector: View {
             guard style != clip.hookStyle else { return }
             clip.hookStyle = style
             onChange()
+        }
+    }
+
+    private var otherClips: [Clip] {
+        (clip.project?.clips ?? []).filter { $0.id != clip.id }
+    }
+
+    private var presetSection: some View {
+        let current = presets.match(style)
+        return Section {
+            Picker("Preset", selection: Binding(get: { current?.id ?? "" }, set: { id in
+                if let preset = presets.preset(id: id) { style = style.adopting(preset.style) }
+            })) {
+                if current == nil { Text("Custom").tag("") }
+                ForEach(HookPreset.builtIn) { Text($0.name).tag($0.id) }
+                if !presets.saved.isEmpty {
+                    Divider()
+                    ForEach(presets.saved) { Text($0.name).tag($0.id) }
+                }
+            }
+            ViewThatFits(in: .horizontal) {
+                HStack { presetButtons(current) }
+                VStack(alignment: .leading) { presetButtons(current) }
+            }
+        } header: {
+            Text("Preset")
+        } footer: {
+            Text("A preset keeps this hook’s timing, look and text settings. Each clip keeps its own hook words.")
+                .foregroundStyle(.secondary)
+        }
+        .alert("Save Hook Preset", isPresented: $namingPreset) {
+            TextField("Name", text: $presetName)
+            Button("Save") { presets.save(style, named: presetName) }
+                .disabled(presetName.trimmingCharacters(in: .whitespaces).isEmpty)
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("Use it on other clips here, or pick it when you create a new project. Saving under an existing name updates that preset.")
+        }
+        .confirmationDialog("Use this hook style on all \(otherClips.count + 1) clips?", isPresented: $confirmingApplyAll,
+                            titleVisibility: .visible) {
+            Button("Apply to All Clips") { applyToAllClips() }
+        } message: {
+            Text("Timing, look and text settings change. Each clip keeps its own hook words, and hidden hooks stay hidden.")
+        }
+        .confirmationDialog("Delete the preset “\(deletingPreset?.name ?? "")”?", isPresented: Binding(
+            get: { deletingPreset != nil }, set: { if !$0 { deletingPreset = nil } }), titleVisibility: .visible) {
+            Button("Delete Preset", role: .destructive) {
+                if let deletingPreset { presets.delete(deletingPreset) }
+            }
+        } message: {
+            Text("Clips that use it keep their style.")
+        }
+    }
+
+    @ViewBuilder
+    private func presetButtons(_ current: HookPreset?) -> some View {
+        Button("Save as Preset…") {
+            presetName = current.flatMap { $0.isBuiltIn ? nil : $0.name } ?? ""
+            namingPreset = true
+        }
+        Button("Apply to All Clips…") { confirmingApplyAll = true }
+            .disabled(otherClips.isEmpty)
+            .help("Gives every clip in this project the same hook timing, look and text settings.")
+        if let current, !current.isBuiltIn {
+            Button("Delete Preset…", role: .destructive) { deletingPreset = current }
+        }
+    }
+
+    private func applyToAllClips() {
+        for other in otherClips {
+            other.hookStyle = other.hookStyle.adopting(style)
         }
     }
 

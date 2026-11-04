@@ -518,12 +518,10 @@ nonisolated enum OverlayBuilder {
         }
 
         // Hook title
-        if input.hook.enabled, !input.hookText.trimmingCharacters(in: .whitespaces).isEmpty,
-           let img = TextRenderer.hook(input.hookText, style: input.hook, frameWidth: W) {
+        if let hook = hookTitle(input, frameSize: renderSize) {
             let l = CALayer()
-            l.frame = hookFrame(imageSize: CGSize(width: img.width, height: img.height), style: input.hook,
-                                frameSize: CGSize(width: W, height: H))
-            l.contents = img
+            l.frame = hook.frame
+            l.contents = hook.image
             l.opacity = 0
             // With a teaser, the hook stays over it and still gets its full time in the clip.
             let shown = input.hook.duration <= 0 ? duration : min(duration, input.hook.duration + timeline.teaserDuration)
@@ -542,34 +540,66 @@ nonisolated enum OverlayBuilder {
         }
 
         // Watermark
-        let wm = input.watermark
-        if wm.enabled {
-            var image: CGImage?
-            if wm.useImage, !wm.imagePath.isEmpty { image = TextRenderer.image(at: wm.imagePath) }
-            if image == nil, !wm.text.isEmpty { image = TextRenderer.watermarkText(wm.text, frameWidth: W, size: wm.size) }
-            if let image {
-                var size = CGSize(width: image.width, height: image.height)
-                if wm.useImage {
-                    let targetW = W * CGFloat(wm.size)
-                    size = CGSize(width: targetW, height: targetW * size.height / max(size.width, 1))
-                }
-                let m = W * 0.05
-                let origin: CGPoint = switch wm.position {
-                case .topLeading: CGPoint(x: m, y: H - m * 1.6 - size.height)
-                case .topTrailing: CGPoint(x: W - m - size.width, y: H - m * 1.6 - size.height)
-                case .bottomLeading: CGPoint(x: m, y: m * 1.6)
-                case .bottomTrailing: CGPoint(x: W - m - size.width, y: m * 1.6)
-                case .center: CGPoint(x: (W - size.width) / 2, y: (H - size.height) / 2)
-                }
-                let l = CALayer()
-                l.frame = CGRect(origin: origin, size: size)
-                l.contents = image
-                l.contentsGravity = .resizeAspect
-                l.opacity = Float(wm.opacity)
-                root.addSublayer(l)
-            }
+        if let mark = watermark(input.watermark, frameSize: renderSize) {
+            let l = CALayer()
+            l.frame = mark.frame
+            l.contents = mark.image
+            l.contentsGravity = .resizeAspect
+            l.opacity = Float(input.watermark.opacity)
+            root.addSublayer(l)
         }
         return root
+    }
+
+    /// The hook title's bitmap and where it goes, or nil when the clip shows none.
+    static func hookTitle(_ input: RenderInput, frameSize: CGSize) -> (image: CGImage, frame: CGRect)? {
+        guard input.hook.enabled, !input.hookText.trimmingCharacters(in: .whitespaces).isEmpty,
+              let image = TextRenderer.hook(input.hookText, style: input.hook, frameWidth: frameSize.width) else { return nil }
+        let frame = hookFrame(imageSize: CGSize(width: image.width, height: image.height), style: input.hook, frameSize: frameSize)
+        return (image, frame)
+    }
+
+    /// The watermark's bitmap and where it goes, or nil when there's none to show.
+    static func watermark(_ wm: WatermarkSettings, frameSize: CGSize) -> (image: CGImage, frame: CGRect)? {
+        guard wm.enabled else { return nil }
+        let W = frameSize.width, H = frameSize.height
+        var image: CGImage?
+        if wm.useImage, !wm.imagePath.isEmpty { image = TextRenderer.image(at: wm.imagePath) }
+        if image == nil, !wm.text.isEmpty { image = TextRenderer.watermarkText(wm.text, frameWidth: W, size: wm.size) }
+        guard let image else { return nil }
+        var size = CGSize(width: image.width, height: image.height)
+        if wm.useImage {
+            let targetW = W * CGFloat(wm.size)
+            size = CGSize(width: targetW, height: targetW * size.height / max(size.width, 1))
+        }
+        let m = W * 0.05
+        let origin: CGPoint = switch wm.position {
+        case .topLeading: CGPoint(x: m, y: H - m * 1.6 - size.height)
+        case .topTrailing: CGPoint(x: W - m - size.width, y: H - m * 1.6 - size.height)
+        case .bottomLeading: CGPoint(x: m, y: m * 1.6)
+        case .bottomTrailing: CGPoint(x: W - m - size.width, y: m * 1.6)
+        case .center: CGPoint(x: (W - size.width) / 2, y: (H - size.height) / 2)
+        }
+        return (image, CGRect(origin: origin, size: size))
+    }
+
+    /// One video frame with the hook title (at rest, not mid-animation) and watermark drawn over it. Captions and
+    /// B-roll are left out, so a cover made from it carries only one line of text: the hook.
+    static func cover(over frame: CGImage, input: RenderInput, size: CGSize) -> CGImage? {
+        guard let space = CGColorSpace(name: CGColorSpace.sRGB),
+              let ctx = CGContext(data: nil, width: Int(size.width.rounded()), height: Int(size.height.rounded()),
+                                  bitsPerComponent: 8, bytesPerRow: 0, space: space,
+                                  bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue) else { return nil }
+        let bounds = CGRect(origin: .zero, size: size)
+        ctx.draw(frame, in: bounds)
+        if let hook = hookTitle(input, frameSize: size) {
+            ctx.draw(hook.image, in: hook.frame)
+        }
+        if let mark = watermark(input.watermark, frameSize: size) {
+            ctx.setAlpha(CGFloat(input.watermark.opacity))
+            ctx.draw(mark.image, in: mark.frame)
+        }
+        return ctx.makeImage()
     }
 }
 
@@ -628,14 +658,19 @@ nonisolated enum ClipExporter {
         }
     }
 
-    /// Saves the first frame of a finished video as a JPEG, captions and hook included, replacing `url` in one step.
+    /// Saves the clip's opening frame as a JPEG cover, replacing `url` in one step. It has the hook title and
+    /// watermark but no captions, so the hook isn't doubled by the subtitle under it.
     @concurrent
-    static func saveFirstFrame(of video: URL, to url: URL) async throws {
-        let generator = AVAssetImageGenerator(asset: AVURLAsset(url: video))
-        generator.appliesPreferredTrackTransform = true
+    static func saveCover(_ input: RenderInput, to url: URL) async throws {
+        let built = try await CompositionBuilder.build(input)
+        let generator = AVAssetImageGenerator(asset: built.composition)
+        generator.videoComposition = built.videoComposition()
         generator.requestedTimeToleranceBefore = .zero
         generator.requestedTimeToleranceAfter = .zero
-        let (image, _) = try await generator.image(at: .zero)
+        let (frame, _) = try await generator.image(at: .zero)
+        guard let image = OverlayBuilder.cover(over: frame, input: input, size: built.renderSize) else {
+            throw RenderError.imageNotWritten
+        }
         let partial = url.deletingLastPathComponent().appending(path: ".\(UUID().uuidString).jpg")
         defer { try? FileManager.default.removeItem(at: partial) }
         try writeJPEG(image, to: partial, quality: 0.92)

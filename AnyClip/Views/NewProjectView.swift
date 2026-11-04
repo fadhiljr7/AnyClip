@@ -17,6 +17,7 @@ struct NewProjectView: View {
     @State private var file: URL?
     @State private var subtitleFile: URL?
     @State private var options = ProjectOptions()
+    private let presets = HookPresetLibrary.shared
     @State private var isTargeted = false
     @State private var showSubtitleImporter = false
     @FocusState private var linkFocused: Bool
@@ -144,6 +145,18 @@ struct NewProjectView: View {
                     Text("Hook title at the start")
                     Text("Shows a short, attention-grabbing title over the first seconds of each clip. You can edit or turn it off in the editor.")
                 }
+                if options.hookEnabled {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("Hook style")
+                        HookPresetPicker(selection: $options.hookPresetID)
+                        Text(presets.saved.isEmpty
+                             ? "To add your own, style a hook in the editor’s Hook tab and choose Save as Preset."
+                             : "Your saved presets keep their timing, look and text settings.")
+                            .font(.callout)
+                            .foregroundStyle(.secondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
                 Toggle(isOn: $options.broll) {
                     Text("B-roll")
                     Text("Adds 1–3 animated keyword cards to each clip. You can edit or remove them in the editor.")
@@ -225,6 +238,8 @@ struct NewProjectView: View {
                 options.topic = ""
                 options.transcriptLanguage = nil
             }
+            // The preset used last time may have been deleted since.
+            if presets.preset(id: options.hookPresetID) == nil { options.hookPresetID = HookPreset.defaultID }
             fillLinkFromClipboard()
             linkFocused = file == nil && !Onboarding.shared.isActive
         }
@@ -528,6 +543,65 @@ struct CaptionPresetPicker: View {
             .accessibilityLabel(preset.name)
             .accessibilityAddTraits(selection == preset.id ? .isSelected : [])
         }
+    }
+}
+
+/// The built-in hook looks and the saved presets, as small renderings to pick from.
+struct HookPresetPicker: View {
+    @Binding var selection: String
+    private let library = HookPresetLibrary.shared
+
+    var body: some View {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 92, maximum: 92), spacing: 8)], alignment: .leading, spacing: 10) {
+            ForEach(library.all) { preset in
+                Button {
+                    selection = preset.id
+                } label: {
+                    VStack(spacing: 4) {
+                        HookSwatch(style: preset.style)
+                            .frame(width: 92, height: 58)
+                            .clipShape(.rect(cornerRadius: 7))
+                            .overlay {
+                                RoundedRectangle(cornerRadius: 7)
+                                    .strokeBorder(selection == preset.id ? Color.accentColor : .clear, lineWidth: 2.5)
+                            }
+                        Text(preset.name)
+                            .font(.caption)
+                            .lineLimit(1)
+                            .truncationMode(.tail)
+                            .frame(maxWidth: 92)
+                            .foregroundStyle(selection == preset.id ? .primary : .secondary)
+                    }
+                }
+                .buttonStyle(.plain)
+                .help(preset.name)
+                .accessibilityLabel(preset.name)
+                .accessibilityAddTraits(selection == preset.id ? .isSelected : [])
+            }
+        }
+    }
+}
+
+/// A real rendering of a hook style over a neutral backdrop, its text enlarged so the look reads at this size.
+struct HookSwatch: View {
+    let style: HookStyle
+
+    var body: some View {
+        ZStack {
+            LinearGradient(colors: [Color(white: 0.32), Color(white: 0.12)], startPoint: .top, endPoint: .bottom)
+            if let image = TextRenderer.hook(String(localized: "Hook"), style: sample, frameWidth: 184) {
+                Image(decorative: image, scale: 2)
+                    .resizable()
+                    .scaledToFit()
+                    .padding(2)
+            }
+        }
+    }
+
+    private var sample: HookStyle {
+        var style = style
+        style.size = 0.16
+        return style
     }
 }
 

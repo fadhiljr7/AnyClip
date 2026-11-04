@@ -73,6 +73,8 @@ nonisolated struct ProjectOptions: Codable, Hashable, Sendable {
     var faceTracking = true
     var captionPresetID = "bold"
     var hookEnabled = true
+    /// The hook preset each clip starts with: a `HookLook` for a built-in look, or a saved preset's ID.
+    var hookPresetID = HookPreset.defaultID
     /// BCP-47 code or "auto".
     var language = "auto"
     var exportWhenDone = false
@@ -98,6 +100,7 @@ nonisolated struct ProjectOptions: Codable, Hashable, Sendable {
         faceTracking = try c.decodeIfPresent(Bool.self, forKey: .faceTracking) ?? d.faceTracking
         captionPresetID = try c.decodeIfPresent(String.self, forKey: .captionPresetID) ?? d.captionPresetID
         hookEnabled = try c.decodeIfPresent(Bool.self, forKey: .hookEnabled) ?? d.hookEnabled
+        hookPresetID = try c.decodeIfPresent(String.self, forKey: .hookPresetID) ?? d.hookPresetID
         language = try c.decodeIfPresent(String.self, forKey: .language) ?? d.language
         exportWhenDone = try c.decodeIfPresent(Bool.self, forKey: .exportWhenDone) ?? d.exportWhenDone
         topic = try c.decodeIfPresent(String.self, forKey: .topic) ?? d.topic

@@ -291,6 +291,16 @@
         }
       }
     },
+    "A preset keeps this hook’s timing, look and text settings. Each clip keeps its own hook words." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preset menyimpan pengaturan waktu, tampilan, dan teks hook ini. Setiap klip tetap memakai kata-kata hook-nya sendiri."
+          }
+        }
+      }
+    },
     "A short teaser for the post" : {
       "localizations" : {
         "id" : {
@@ -701,6 +711,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pengenalan suara Apple tidak bisa mentranskripsi video ini (%@), jadi transkrip YouTube yang dipakai."
+          }
+        }
+      }
+    },
+    "Apply to All Clips" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terapkan ke Semua Klip"
+          }
+        }
+      }
+    },
+    "Apply to All Clips…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terapkan ke Semua Klip…"
           }
         }
       }
@@ -1317,6 +1347,16 @@
         }
       }
     },
+    "Clips that use it keep their style." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klip yang memakainya tetap mempertahankan gayanya."
+          }
+        }
+      }
+    },
     "Close the tour (Esc). You can repeat it from Settings › General." : {
       "localizations" : {
         "id" : {
@@ -1557,6 +1597,16 @@
         }
       }
     },
+    "Custom" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kustom"
+          }
+        }
+      }
+    },
     "Custom Provider" : {
       "localizations" : {
         "id" : {
@@ -1647,6 +1697,26 @@
         }
       }
     },
+    "Delete Preset" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Preset"
+          }
+        }
+      }
+    },
+    "Delete Preset…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Preset…"
+          }
+        }
+      }
+    },
     "Delete Project" : {
       "localizations" : {
         "id" : {
@@ -1673,6 +1743,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hapus Proyek…"
+          }
+        }
+      }
+    },
+    "Delete the preset “%@”?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus preset “%@”?"
           }
         }
       }
@@ -2508,6 +2588,16 @@
         }
       }
     },
+    "Gives every clip in this project the same hook timing, look and text settings." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memberi semua klip di proyek ini pengaturan waktu, tampilan, dan teks hook yang sama."
+          }
+        }
+      }
+    },
     "Glow" : {
       "localizations" : {
         "id" : {
@@ -2575,6 +2665,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hook"
+          }
+        }
+      }
+    },
+    "Hook Style" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gaya Hook"
+          }
+        }
+      }
+    },
+    "Hook style" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gaya hook"
           }
         }
       }
@@ -3176,6 +3286,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video saya memperlihatkan kedua pembicara dalam bidikan yang konsisten, atau saya paham hasilnya bisa berbeda-beda saat kamera berpindah antarpembicara."
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nama"
           }
         }
       }
@@ -3960,6 +4080,16 @@
         }
       }
     },
+    "Preset" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preset"
+          }
+        }
+      }
+    },
     "Preview this moment" : {
       "localizations" : {
         "id" : {
@@ -4311,12 +4441,32 @@
         }
       }
     },
+    "Save Hook Preset" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan Preset Hook"
+          }
+        }
+      }
+    },
     "Save Key" : {
       "localizations" : {
         "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Simpan Kunci"
+          }
+        }
+      }
+    },
+    "Save as Preset…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan sebagai Preset…"
           }
         }
       }
@@ -5521,12 +5671,32 @@
         }
       }
     },
+    "Timing, look and text settings change. Each clip keeps its own hook words, and hidden hooks stay hidden." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengaturan waktu, tampilan, dan teks akan berubah. Setiap klip tetap memakai kata-kata hook-nya sendiri, dan hook yang disembunyikan tetap tersembunyi."
+          }
+        }
+      }
+    },
     "Title" : {
       "localizations" : {
         "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Judul"
+          }
+        }
+      }
+    },
+    "To add your own, style a hook in the editor’s Hook tab and choose Save as Preset." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Untuk menambah preset sendiri, atur hook di tab Hook pada editor lalu pilih Simpan sebagai Preset."
           }
         }
       }
@@ -5871,12 +6041,32 @@
         }
       }
     },
+    "Use it on other clips here, or pick it when you create a new project. Saving under an existing name updates that preset." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gunakan di klip lain di sini, atau pilih saat Anda membuat proyek baru. Menyimpan dengan nama yang sudah ada akan memperbarui preset tersebut."
+          }
+        }
+      }
+    },
     "Use subtitles you already have, such as an .srt or .vtt file exported from your editor. Captions will match your file exactly." : {
       "localizations" : {
         "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pakai subtitle yang sudah Anda punya, misalnya file .srt atau .vtt dari aplikasi editor. Teks klip akan sama persis dengan file Anda."
+          }
+        }
+      }
+    },
+    "Use this hook style on all %lld clips?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gunakan gaya hook ini di semua %lld klip?"
           }
         }
       }
@@ -6308,6 +6498,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Proyek Anda"
+          }
+        }
+      }
+    },
+    "Your saved presets keep their timing, look and text settings." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preset yang Anda simpan menyimpan pengaturan waktu, tampilan, dan teksnya."
           }
         }
       }

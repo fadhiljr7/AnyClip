@@ -27,6 +27,7 @@ nonisolated enum AppSettings {
         static let inspectorTab = "inspectorTab"
         static let lastOptions = "lastOptions"
         static let watermark = "watermark"
+        static let hookPresets = "hookPresets"
         static func aiModel(_ provider: AIProvider) -> String { "aiModel.\(provider.rawValue)" }
     }
 

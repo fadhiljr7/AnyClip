@@ -336,6 +336,14 @@ struct ClipCard: View {
                 ShareLink(item: url)
             }
             Button(clip.isSaved ? "Remove from Saved" : "Add to Saved") { clip.isSaved.toggle() }
+            Menu("Hook Style") {
+                let current = HookPresetLibrary.shared.match(clip.hookStyle)
+                ForEach(HookPresetLibrary.shared.all) { preset in
+                    Toggle(preset.name, isOn: Binding(get: { current?.id == preset.id }, set: { _ in
+                        clip.hookStyle = clip.hookStyle.adopting(preset.style)
+                    }))
+                }
+            }
             Button("Copy Title") {
                 NSPasteboard.general.clearContents()
                 NSPasteboard.general.setString(clip.title, forType: .string)

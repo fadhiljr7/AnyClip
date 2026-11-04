@@ -9,7 +9,8 @@ import Testing
 import Foundation
 @testable import AnyClip
 
-struct ProcessRunnerTests {
+/// Off the main actor, so the stopwatch in these tests measures the tool and not other tests holding the main thread.
+nonisolated struct ProcessRunnerTests {
     private let shell = URL(filePath: "/bin/sh")
 
     @Test func returnsWhatTheToolPrinted() async throws {

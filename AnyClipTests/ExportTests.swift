@@ -39,7 +39,7 @@ struct ExportTests {
         #expect(try await track.load(.naturalSize) == CGSize(width: 360, height: 640))
     }
 
-    @Test func theThumbnailIsTheVideosFirstFrame() async throws {
+    @Test func theThumbnailIsTheClipsFirstFrame() async throws {
         let video = try await makeTwoColourVideo()
         let folder = FileManager.default.temporaryDirectory.appending(path: "anyclip-export-\(UUID().uuidString)", directoryHint: .isDirectory)
         try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
@@ -49,12 +49,31 @@ struct ExportTests {
         }
         let url = folder.appending(path: "01 Thumbnail.jpg")
         try Data("an old thumbnail".utf8).write(to: url)
-        try await ClipExporter.saveFirstFrame(of: video, to: url)
+        try await ClipExporter.saveCover(input(video: video), to: url)
         #expect(try folderContents(folder) == ["01 Thumbnail.jpg"])
         let source = try #require(CGImageSourceCreateWithURL(url as CFURL, nil))
         let image = try #require(CGImageSourceCreateImageAtIndex(source, 0, nil))
-        #expect(image.width == 1280 && image.height == 720)
+        #expect(image.width == 360 && image.height == 640)
         #expect(CGImageSourceGetType(source) as String? == "public.jpeg")
+    }
+
+    /// The first frame of a clip shows its hook and its first caption at once; the cover keeps only the hook.
+    @Test func theThumbnailHasTheHookButNoCaptions() throws {
+        let size = CGSize(width: 360, height: 640)
+        let frame = try #require(CGContext(data: nil, width: 360, height: 640, bitsPerComponent: 8, bytesPerRow: 0,
+                                           space: CGColorSpaceCreateDeviceRGB(),
+                                           bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue)?.makeImage())
+        var clip = input(video: URL(filePath: "/unused.mov"))
+        clip.words = [Word(text: "CAPTION", start: 0, end: 2)]
+        clip.caption.positionY = 0.5
+        let cover = try #require(OverlayBuilder.cover(over: frame, input: clip, size: size))
+        let hook = try #require(OverlayBuilder.hookTitle(clip, frameSize: size))
+        // A black frame stays black where the caption would be, and the white hook card is drawn where it belongs.
+        #expect(brightness(cover, at: CGPoint(x: 180, y: 320)) < 10)
+        #expect(brightness(cover, at: CGPoint(x: hook.frame.midX, y: hook.frame.maxY - TextRenderer.hookRoom(style: clip.hook, frameWidth: 360) - 2)) > 200)
+        clip.hook.enabled = false
+        let plain = try #require(OverlayBuilder.cover(over: frame, input: clip, size: size))
+        #expect(brightness(plain, at: CGPoint(x: hook.frame.midX, y: hook.frame.midY)) < 10)
     }
 
     @Test func aFailedThumbnailKeepsTheEarlierOne() async throws {
@@ -64,7 +83,7 @@ struct ExportTests {
         let url = folder.appending(path: "01 Thumbnail.jpg")
         try Data("the earlier thumbnail".utf8).write(to: url)
         await #expect(throws: (any Error).self) {
-            try await ClipExporter.saveFirstFrame(of: folder.appending(path: "missing.mp4"), to: url)
+            try await ClipExporter.saveCover(input(video: folder.appending(path: "missing.mp4")), to: url)
         }
         #expect(try String(contentsOf: url, encoding: .utf8) == "the earlier thumbnail")
         #expect(try folderContents(folder) == ["01 Thumbnail.jpg"])
@@ -100,4 +119,13 @@ struct ExportTests {
         // Whether it stopped in time or just finished, a whole file is there and no partial one.
         #expect(try folderContents(folder) == ["01 Clip.mp4"])
     }
+}
+
+/// Average of red, green and blue at a point, bottom-left origin.
+private func brightness(_ image: CGImage, at point: CGPoint) -> Int {
+    var px = [UInt8](repeating: 0, count: 4)
+    let ctx = CGContext(data: &px, width: 1, height: 1, bitsPerComponent: 8, bytesPerRow: 4,
+                        space: CGColorSpaceCreateDeviceRGB(), bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)!
+    ctx.draw(image, in: CGRect(x: -point.x, y: -point.y, width: CGFloat(image.width), height: CGFloat(image.height)))
+    return (Int(px[0]) + Int(px[1]) + Int(px[2])) / 3
 }
