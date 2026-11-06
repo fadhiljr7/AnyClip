@@ -147,8 +147,9 @@ struct NewProjectView: View {
                 }
                 if options.hookEnabled {
                     VStack(alignment: .leading, spacing: 6) {
-                        Text("Hook style")
-                        HookPresetPicker(selection: $options.hookPresetID)
+                        LabeledContent("Hook style") {
+                            HookPresetPicker(selection: $options.hookPresetID)
+                        }
                         Text(presets.saved.isEmpty
                              ? "To add your own, style a hook in the editor’s Hook tab and choose Save as Preset."
                              : "Your saved presets keep their timing, look and text settings.")
@@ -546,38 +547,46 @@ struct CaptionPresetPicker: View {
     }
 }
 
-/// The built-in hook looks and the saved presets, as small renderings to pick from.
+/// The built-in hook looks and the saved presets, drawn like the caption swatches beside them.
+/// One row while they fit, wrapping onto more rows once there are many saved presets.
 struct HookPresetPicker: View {
     @Binding var selection: String
     private let library = HookPresetLibrary.shared
 
     var body: some View {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 92, maximum: 92), spacing: 8)], alignment: .leading, spacing: 10) {
-            ForEach(library.all) { preset in
-                Button {
-                    selection = preset.id
-                } label: {
-                    VStack(spacing: 4) {
-                        HookSwatch(style: preset.style)
-                            .frame(width: 92, height: 58)
-                            .clipShape(.rect(cornerRadius: 7))
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 7)
-                                    .strokeBorder(selection == preset.id ? Color.accentColor : .clear, lineWidth: 2.5)
-                            }
-                        Text(preset.name)
-                            .font(.caption)
-                            .lineLimit(1)
-                            .truncationMode(.tail)
-                            .frame(maxWidth: 92)
-                            .foregroundStyle(selection == preset.id ? .primary : .secondary)
-                    }
-                }
-                .buttonStyle(.plain)
-                .help(preset.name)
-                .accessibilityLabel(preset.name)
-                .accessibilityAddTraits(selection == preset.id ? .isSelected : [])
+        ViewThatFits(in: .horizontal) {
+            HStack(spacing: 8) { swatches }
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 74, maximum: 74), spacing: 8)], alignment: .trailing, spacing: 8) {
+                swatches
             }
+        }
+    }
+
+    private var swatches: some View {
+        ForEach(library.all) { preset in
+            Button {
+                selection = preset.id
+            } label: {
+                VStack(spacing: 4) {
+                    HookSwatch(style: preset.style)
+                        .frame(width: 74, height: 46)
+                        .clipShape(.rect(cornerRadius: 7))
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 7)
+                                .strokeBorder(selection == preset.id ? Color.accentColor : .clear, lineWidth: 2.5)
+                        }
+                    Text(preset.name)
+                        .font(.caption)
+                        .lineLimit(1)
+                        .truncationMode(.tail)
+                        .frame(maxWidth: 74)
+                        .foregroundStyle(selection == preset.id ? .primary : .secondary)
+                }
+            }
+            .buttonStyle(.plain)
+            .help(preset.name)
+            .accessibilityLabel(preset.name)
+            .accessibilityAddTraits(selection == preset.id ? .isSelected : [])
         }
     }
 }
@@ -593,7 +602,8 @@ struct HookSwatch: View {
                 Image(decorative: image, scale: 2)
                     .resizable()
                     .scaledToFit()
-                    .padding(2)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 7)
             }
         }
     }
